@@ -1,0 +1,14 @@
+.container-header {
+	display: flex;
+	justify-content: space-between;
+	width: 87%;
+	margin: 2rem auto 2.5rem;
+}
+
+.icon-hamburger {
+	align-self: center;
+}
+
+.logo-header {
+	vertical-align: bottom;
+}

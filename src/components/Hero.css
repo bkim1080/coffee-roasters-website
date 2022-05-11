@@ -1,0 +1,46 @@
+.container-hero {
+	background-image: url("/public/assets/img/home/mobile/image-hero-coffeepress.jpg");
+	background-size: cover;
+
+	margin: 0 auto;
+	width: 87%;
+
+	border-radius: 12px;
+}
+
+.contents-hero {
+	width: 85%;
+	margin: 0 auto;
+	padding: 6.25rem 0;
+	text-align: center;
+}
+
+.button-hero {
+	background-color: #0e8784;
+	color: #fefcf7;
+	font-family: "Fraunces", serif;
+	font-size: 1.125rem;
+
+	padding: 1em 2em;
+
+	border: none;
+	border-radius: 5px;
+}
+
+.heading-hero {
+	color: #fefcf7;
+	font-family: "Fraunces", serif;
+	font-size: 2.5rem;
+	letter-spacing: 1px;
+	line-height: 1;
+}
+
+.paragraph-hero {
+	color: #fefcf7;
+	font-size: 0.9375rem;
+	font-family: "Barlow", sans-serif;
+	line-height: 25px;
+	opacity: 80%;
+
+	margin: 1.625rem 0 2.3125rem;
+}

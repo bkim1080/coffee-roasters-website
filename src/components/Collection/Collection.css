@@ -1,0 +1,15 @@
+.container-collection {
+	margin: 7.5rem auto;
+	width: 75%;
+
+	text-align: center;
+}
+
+.heading-collection {
+	color: #83888f;
+	font-family: "Fraunces", serif;
+	font-size: 2.5rem;
+	letter-spacing: 1px;
+
+	/* margin: 0 0 2rem 0; */
+}
