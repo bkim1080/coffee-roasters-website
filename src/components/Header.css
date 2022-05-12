@@ -2,7 +2,7 @@
 	display: flex;
 	justify-content: space-between;
 	width: 87%;
-	margin: 2rem auto 2.5rem;
+	margin: 3.2rem auto 4rem;
 }
 
 .icon-hamburger {
@@ -11,4 +11,6 @@
 
 .logo-header {
 	vertical-align: bottom;
+	width: 163px;
+	height: 18px;
 }

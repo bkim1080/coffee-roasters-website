@@ -1,0 +1,41 @@
+.container-feature-card {
+	background-color: #0e8784;
+
+	margin: 0 auto 2.4rem;
+	width: 85%;
+
+	position: relative;
+	top: 320px;
+
+	display: flex;
+	flex-direction: column;
+
+	border-radius: 5px;
+}
+
+.contents-feature-card {
+	width: 83%;
+	margin: 7.2rem auto 5.1rem;
+}
+
+.image-feature-card {
+	display: block;
+	margin: 0 auto;
+}
+
+.heading-feature-card {
+	color: #fefcf7;
+	font-size: 2.4rem;
+	font-family: "Fraunces", serif;
+	letter-spacing: 0.5px;
+	line-height: 3.2rem;
+
+	margin: 5.6rem 0 2.4rem;
+}
+
+.description-feature-card {
+	color: #fefcf7;
+	font-size: 1.5rem;
+	font-family: "Barlow", sans-serif;
+	line-height: 2.5rem;
+}
