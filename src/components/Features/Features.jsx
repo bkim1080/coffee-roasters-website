@@ -1,28 +1,9 @@
 import React from "react";
 import FeatureCard from "./FeatureCard";
+import { featuresList } from "../data";
 import "./Features.css";
 
 export default function Features() {
-	const featuresList = [
-		{
-			image: "icon-coffee-bean.svg",
-			name: "Best quality",
-			description: "Discover an endless variety of the world’s best artisan coffee from each of our roasters.",
-			alt: "coffee bean icon",
-		},
-		{
-			image: "icon-gift.svg",
-			name: "Exclusive benefits",
-			description: "Special offers and swag when you subscribe, including 30% off your first shipment.",
-			alt: "present icon",
-		},
-		{
-			image: "icon-truck.svg",
-			name: "Free shipping",
-			description: "We cover the cost and coffee is delivered fast. Peak freshness: guaranteed.",
-			alt: "truck icon",
-		},
-	];
 	return (
 		<div className="container-features">
 			<div className="intro-features">
@@ -34,14 +15,10 @@ export default function Features() {
 				</p>
 			</div>
 			<div>
-				{featuresList.map((feature) => (
-					<FeatureCard
-						image={feature.image}
-						name={feature.name}
-						description={feature.description}
-						alt={feature.alt}
-					/>
-				))}
+				{featuresList.map((feature) => {
+					const { id, image, name, description, alt } = feature;
+					return <FeatureCard key={id} image={image} name={name} description={description} alt={alt} />;
+				})}
 			</div>
 		</div>
 	);
