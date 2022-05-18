@@ -1,7 +1,7 @@
 import React from "react";
-import "./Hero.css";
+import "./HeroAbout.css";
 
-export default function Hero() {
+export default function HeroAbout() {
 	return (
 		<div className="container-hero">
 			<div className="contents-hero">

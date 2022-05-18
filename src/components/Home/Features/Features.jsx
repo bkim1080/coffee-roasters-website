@@ -1,6 +1,6 @@
 import React from "react";
 import FeatureCard from "./FeatureCard";
-import { featuresList } from "../data";
+import { features } from "../../../data";
 import "./Features.css";
 
 export default function Features() {
@@ -15,7 +15,7 @@ export default function Features() {
 				</p>
 			</div>
 			<div>
-				{featuresList.map((feature) => {
+				{features.map((feature) => {
 					const { id, image, name, description, alt } = feature;
 					return <FeatureCard key={id} image={image} name={name} description={description} alt={alt} />;
 				})}

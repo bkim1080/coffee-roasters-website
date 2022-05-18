@@ -1,5 +1,5 @@
 import React from "react";
-import { pageLinks } from "./data";
+import { pageLinks } from "../data";
 import "./Footer.css";
 
 export default function Footer() {

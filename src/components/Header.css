@@ -32,3 +32,8 @@
 	letter-spacing: 1px;
 	text-decoration: none;
 }
+@media (min-width: 768px) {
+	.icon-hamburger {
+		display: none;
+	}
+}

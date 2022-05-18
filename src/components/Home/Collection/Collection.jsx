@@ -1,6 +1,6 @@
 import React from "react";
 import CoffeeBeans from "./CoffeeBeans";
-import { coffeeCollection } from "../data";
+import { coffeeCollection } from "../../../data";
 import "./Collection.css";
 
 export default function Collection() {
