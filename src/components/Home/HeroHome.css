@@ -1,4 +1,4 @@
-.button-hero {
+.button-hero-home {
 	background-color: #0e8784;
 	color: #fefcf7;
 	font-family: "Fraunces", serif;
@@ -9,7 +9,7 @@
 	border-radius: 5px;
 }
 
-.container-hero {
+.container-hero-home {
 	background-image: url("/public/assets/img/home/mobile/image-hero-coffeepress.jpg");
 	background-size: cover;
 
@@ -19,14 +19,14 @@
 	border-radius: 12px;
 }
 
-.contents-hero {
+.contents-hero-home {
 	width: 87%;
 	margin: 0 auto;
 	padding: 10rem 0;
 	text-align: center;
 }
 
-.heading-hero {
+.heading-hero-home {
 	color: #fefcf7;
 	font-family: "Fraunces", serif;
 	font-size: 4rem;
@@ -34,7 +34,7 @@
 	line-height: 1;
 }
 
-.paragraph-hero {
+.description-hero-home {
 	color: #fefcf7;
 	font-size: 1.5rem;
 	font-family: "Barlow", sans-serif;

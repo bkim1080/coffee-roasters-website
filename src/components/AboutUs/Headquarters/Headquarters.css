@@ -1,0 +1,13 @@
+.container-headquarters {
+	text-align: center;
+	margin: 0 0 12rem 0;
+}
+.heading-headquarters {
+	color: #83888f;
+	font-family: "Fraunces", serif;
+	font-size: 2.3rem;
+	line-height: 3.2rem;
+	letter-spacing: 0.5px;
+
+	margin: 0 0 7.2rem 0;
+}

@@ -1,0 +1,44 @@
+.container-quality {
+	background-color: #2c343e;
+	border-radius: 10px;
+
+	margin: 0 auto 12rem;
+	width: 87%;
+
+	text-align: center;
+}
+
+.contents-quality {
+	position: relative;
+	top: -8rem;
+
+	margin: 0 auto;
+	width: 85%;
+}
+
+.description-quality {
+	color: #fefcf7;
+	font-family: "Barlow", sans-serif;
+	font-size: 1.5rem;
+	line-height: 2.5rem;
+	opacity: 80%;
+}
+
+.heading-quality {
+	color: #fefcf7;
+	font-family: "Fraunces", serif;
+	font-size: 2.8rem;
+	letter-spacing: 0.5px;
+	line-height: 2.8rem;
+
+	margin: 6.4rem auto 2.4rem;
+}
+
+.image-quality {
+	border-radius: 10px;
+
+	display: block;
+	margin: 0 auto;
+
+	width: 100%;
+}

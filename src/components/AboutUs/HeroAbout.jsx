@@ -3,15 +3,15 @@ import "./HeroAbout.css";
 
 export default function HeroAbout() {
 	return (
-		<div className="container-hero">
-			<div className="contents-hero">
-				<h1 className="heading-hero">Great coffee made simple.</h1>
-				<p className="paragraph-hero">
-					Start your mornings with the world’s best coffees. Try our expertly curated artisan coffees from our
-					best roasters delivered directly to your door, at your schedule.
+		<section className="container-hero-about">
+			<div className="contents-hero-about">
+				<h2 className="heading-hero-about">About Us</h2>
+				<p className="description-hero-about">
+					Coffeeroasters began its journey of exotic discovery in 1999, highlighting stories of coffee from
+					around the world. We have since been dedicated to bring the perfect cup - from bean to brew - in
+					every shipment.
 				</p>
-				<button className="button-hero">Create your plan</button>
 			</div>
-		</div>
+		</section>
 	);
 }

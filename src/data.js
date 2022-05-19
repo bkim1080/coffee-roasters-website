@@ -31,7 +31,7 @@ export const coffeeCollection = [
 	},
 ];
 
-export const features = [
+export const featuresList = [
 	{
 		id: 1,
 		image: "icon-coffee-bean.svg",
@@ -76,5 +76,38 @@ export const planSteps = [
 		name: "Receive and enjoy!",
 		description:
 			"We ship your package within 48 hours, freshly roasted. Sit back and enjoy award-winning world-class coffees curated to provide a distinct tasting experience.",
+	},
+];
+
+export const headquartersList = [
+	{
+		id: 1,
+		image: "illustration-uk.svg",
+		country: "United Kingdom",
+		street: "68  Asfordby Rd",
+		town1: "Alcaston",
+		town2: "SY6 1YA",
+		phone: "+44 1241 918425",
+		alt: "UK country shape",
+	},
+	{
+		id: 2,
+		image: "illustration-canada.svg",
+		country: "Canada",
+		street: "1528  Eglinton Avenue",
+		town1: "Toronto",
+		town2: "Ontario M4P 1A6",
+		phone: "+1 416 485 2997",
+		alt: "Canada country shape",
+	},
+	{
+		id: 3,
+		image: "illustration-australia.svg",
+		country: "Australia",
+		street: "36 Swanston Street",
+		town1: "Kewell",
+		town2: "Victoria",
+		phone: "+61 4 9928 3629",
+		alt: "Austrailia country shape",
 	},
 ];
