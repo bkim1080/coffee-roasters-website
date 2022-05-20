@@ -1,0 +1,17 @@
+.heading-question {
+	color: #83888f;
+	width: 24rem;
+}
+
+.heading-container-question {
+	display: flex;
+	justify-content: space-between;
+
+	margin: 0 0 1.8rem 0;
+}
+
+.image-question {
+	align-self: center;
+
+	transform: rotate(180deg);
+}

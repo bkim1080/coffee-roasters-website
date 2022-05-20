@@ -1,0 +1,8 @@
+.container-questions {
+	display: flex;
+	flex-direction: column;
+	gap: 9.6rem;
+
+	margin: 0 auto 12rem;
+	width: 87%;
+}
