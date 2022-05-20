@@ -1,0 +1,40 @@
+.container-step {
+	text-align: center;
+}
+
+.description-step-home {
+	color: #333d4b;
+	font-family: "Barlow", sans-serif;
+	font-size: 1.5rem;
+	line-height: 2.5rem;
+}
+
+.description-step-subscribe {
+	color: #ffffff;
+	font-family: "Barlow", sans-serif;
+	font-size: 1.5rem;
+	line-height: 2.5rem;
+}
+
+.heading-step-home {
+	color: #333d4b;
+	font-size: 2.8rem;
+	line-height: 3.2rem;
+
+	margin: 2.4rem 0;
+}
+
+.heading-step-subscribe {
+	color: #ffffff;
+	font-size: 2.8rem;
+	line-height: 3.2rem;
+
+	margin: 2.4rem 0;
+}
+
+.num-step {
+	color: #fdd6ba;
+	font-family: "Fraunces", serif;
+	font-size: 7.2rem;
+	line-height: 7.2rem;
+}

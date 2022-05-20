@@ -1,8 +1,8 @@
 import React from "react";
-import Collection from "../Home/Collection/Collection";
-import Features from "../Home/Features/Features";
-import HeroHome from "../Home/HeroHome";
-import Plan from "../Home/Plan/Plan";
+import Collection from "../home/Collection/Collection";
+import Features from "../home/Features/Features";
+import HeroHome from "../home/HeroHome";
+import HowItWorks from "../home/HowItWorks";
 
 export default function HomePage() {
 	return (
@@ -10,7 +10,7 @@ export default function HomePage() {
 			<HeroHome />
 			<Collection />
 			<Features />
-			<Plan />
+			<HowItWorks />
 		</React.Fragment>
 	);
 }

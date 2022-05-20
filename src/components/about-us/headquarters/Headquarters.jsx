@@ -7,7 +7,7 @@ export default function Headquarters() {
 	return (
 		<section className="container-headquarters">
 			<h4 className="heading-headquarters">Our headquarters</h4>
-			<div>
+			<div className="container-headquarters-list">
 				{headquartersList.map((headquarter) => {
 					return <Headquarter key={headquarter.id} headquarter={headquarter} />;
 				})}

@@ -4,7 +4,7 @@ import "./Footer.css";
 
 export default function Footer() {
 	return (
-		<div className="container-footer">
+		<footer className="container-footer">
 			<div className="content-footer">
 				<img className="logo-footer" src="assets/img/shared/desktop/logo.svg" alt="company logo" />
 				<div className="links-footer">
@@ -31,6 +31,6 @@ export default function Footer() {
 					</a>
 				</div>
 			</div>
-		</div>
+		</footer>
 	);
 }

@@ -1,4 +1,4 @@
-.button-plan {
+.button-howitworks {
 	background-color: #0e8784;
 	color: #fefcf7;
 	font-family: "Fraunces", serif;
@@ -9,20 +9,23 @@
 	border-radius: 5px;
 }
 
-.container-plan {
+.container-howitworks {
 	margin: 44rem auto 12rem;
 	width: 87%;
 
 	text-align: center;
 }
 
-.heading-plan {
+.heading-howitworks {
 	color: #83888f;
-	font-family: "Fraunces", serif;
 	font-size: 2.4rem;
 	line-height: 3.2rem;
 }
 
-.steps-plan {
+.steps-howitworks {
 	margin: 8rem auto;
+
+	display: flex;
+	flex-direction: column;
+	gap: 5.6rem;
 }

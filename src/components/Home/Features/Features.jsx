@@ -5,7 +5,7 @@ import "./Features.css";
 
 export default function Features() {
 	return (
-		<div className="container-features">
+		<section className="container-features">
 			<div className="intro-features">
 				<h2 className="heading-features">Why choose us?</h2>
 				<p className="description-features">
@@ -20,6 +20,6 @@ export default function Features() {
 					return <FeatureCard key={id} image={image} name={name} description={description} alt={alt} />;
 				})}
 			</div>
-		</div>
+		</section>
 	);
 }
