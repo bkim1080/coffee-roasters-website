@@ -9,20 +9,15 @@ export default function Question(props) {
 	}
 	return (
 		<div className="container-question">
-			<div className="heading-container-question">
+			<div onClick={showOptions} className="heading-container-question">
 				<h2 className="heading-question">{props.question.question}</h2>
 				<img
-					onClick={showOptions}
-					className="image-question"
+					className={`arrow-image-question ${isShown && "isShown"}`}
 					src="/assets/img/plan/desktop/icon-arrow.svg"
 					alt="arrow icon"
 				/>
 			</div>
-			{isShown && (
-				<div>
-					<Options question={props.question} />
-				</div>
-			)}
+			{isShown && <Options question={props.question} />}
 		</div>
 	);
 }

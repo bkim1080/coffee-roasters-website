@@ -38,6 +38,11 @@
 	text-decoration: none;
 }
 
+.logo-footer {
+	height: 24px;
+	width: 218px;
+}
+
 .social-icons-footer {
 	display: flex;
 	justify-content: center;

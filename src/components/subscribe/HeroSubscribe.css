@@ -1,10 +1,10 @@
-.container-hero-subscribe {
+.card-hero-subscribe {
 	background-image: url("/public/assets/img/plan/mobile/image-hero-blackcup.jpg");
 	background-size: cover;
-	border-radius: 10px;
+}
 
-	margin: 0 auto 12rem;
-	width: 87%;
+.container-hero-subscribe {
+	margin-bottom: 12rem;
 }
 
 .contents-hero-subscribe {

@@ -9,14 +9,13 @@
 	border-radius: 5px;
 }
 
-.container-hero-about {
+.card-hero-about {
 	background-image: url("/public/assets/img/about/mobile/image-hero-whitecup.jpg");
 	background-size: cover;
+}
 
-	margin: 0 auto;
-	width: 87%;
-
-	border-radius: 10px;
+.container-hero-about {
+	margin-bottom: 12rem;
 }
 
 .contents-hero-about {

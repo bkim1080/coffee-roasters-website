@@ -7,11 +7,15 @@
 	display: flex;
 	justify-content: space-between;
 
-	margin: 0 0 1.8rem 0;
+	margin: 0 0 3.2rem 0;
+
+	cursor: pointer;
 }
 
-.image-question {
+.arrow-image-question {
 	align-self: center;
+}
 
+.arrow-image-question.isShown {
 	transform: rotate(180deg);
 }

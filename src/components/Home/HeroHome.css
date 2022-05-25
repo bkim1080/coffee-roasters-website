@@ -1,28 +1,17 @@
-.button-hero-home {
-	background-color: #0e8784;
-	border: none;
-	border-radius: 5px;
-
-	color: #fefcf7;
-	font-family: "Fraunces", serif;
-	font-size: 1.8rem;
-	padding: 0.9em 1.8em;
+.card-hero-home {
+	background-image: url("/public/assets/img/home/mobile/image-hero-coffeepress.jpg");
+	background-size: cover;
 }
 
 .container-hero-home {
-	background-image: url("/public/assets/img/home/mobile/image-hero-coffeepress.jpg");
-	background-size: cover;
-	border-radius: 10px;
-
-	margin: 0 auto;
-	width: 87%;
+	margin-bottom: 12rem;
 }
 
 .contents-hero-home {
-	width: 85%;
 	margin: 0 auto;
 	padding: 10rem 0;
 	text-align: center;
+	width: 85%;
 }
 
 .heading-hero-home {

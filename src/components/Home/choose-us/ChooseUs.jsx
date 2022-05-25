@@ -1,20 +1,21 @@
 import React from "react";
+import Card from "../../UI/Card";
 import FeatureCard from "./FeatureCard";
 import { featuresList } from "../../../data";
-import "./Features.css";
+import "./ChooseUs.css";
 
-export default function Features() {
+export default function ChooseUs() {
 	return (
-		<section className="container-features">
-			<div className="intro-features">
-				<h2 className="heading-features">Why choose us?</h2>
-				<p className="description-features">
+		<section className="container-choose">
+			<Card className="intro-choose">
+				<h2 className="heading-choose">Why choose us?</h2>
+				<p className="description-choose">
 					A large part of our role is choosing which particular coffees will be featured in our range. This
 					means working closely with the best coffee growers to give you a more impactful experience on every
 					level.
 				</p>
-			</div>
-			<div>
+			</Card>
+			<div className="feature-cards-choose">
 				{featuresList.map((feature) => {
 					const { id, image, name, description, alt } = feature;
 					return <FeatureCard key={id} image={image} name={name} description={description} alt={alt} />;

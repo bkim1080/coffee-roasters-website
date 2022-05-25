@@ -1,0 +1,40 @@
+.container-feature-card {
+	background-color: #0e8784;
+	border-radius: 5px;
+
+	margin: 0 auto;
+	width: 74%;
+}
+
+.contents-feature-card {
+	margin: 7.2rem 0 5.1rem;
+	text-align: center;
+}
+
+.description-feature-card {
+	color: #fefcf7;
+	font-size: 1.5rem;
+	font-family: "Barlow", sans-serif;
+	line-height: 2.5rem;
+
+	margin: 0 auto;
+	width: 79%;
+}
+
+.heading-feature-card {
+	color: #fefcf7;
+	font-size: 2.4rem;
+	line-height: 3.2rem;
+
+	margin: 5.6rem 0 2.4rem;
+}
+
+.image-feature-card {
+	display: block;
+	margin: 0 auto;
+}
+
+.text-feature-card {
+	margin: 0 auto;
+	width: 91%;
+}

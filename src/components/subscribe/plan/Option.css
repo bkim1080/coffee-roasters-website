@@ -1,6 +1,12 @@
 .container-option {
 	background-color: #f4f1eb;
 	border-radius: 10px;
+
+	cursor: pointer;
+}
+
+.container-option.isSelected {
+	background-color: #0e8784;
 }
 
 .contents-option {
@@ -14,6 +20,11 @@
 	font-family: "Barlow", sans-serif;
 	font-size: 1.6rem;
 	line-height: 2.6rem;
+}
+
+.description-option.isSelected,
+.heading-option.isSelected {
+	color: #ffffff;
 }
 
 .heading-option {

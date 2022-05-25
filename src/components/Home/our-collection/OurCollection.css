@@ -1,5 +1,11 @@
+.coffee-collection {
+	display: flex;
+	flex-direction: column;
+	gap: 5.5rem;
+}
+
 .container-collection {
-	margin: 12rem auto;
+	margin: 0 auto 12rem;
 	text-align: center;
 	width: 78%;
 }

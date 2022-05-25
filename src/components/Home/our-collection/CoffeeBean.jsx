@@ -1,7 +1,7 @@
 import React from "react";
 import "./CoffeeBean.css";
 
-export default function Coffee(props) {
+export default function CoffeeBean(props) {
 	return (
 		<div className="container-coffeebean">
 			<img className="image-coffeebean" src={`/assets/img/home/desktop/${props.image}`} alt="coffee beans bag" />

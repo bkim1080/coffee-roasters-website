@@ -1,0 +1,15 @@
+.button {
+	background-color: #0e8784;
+	border: none;
+	border-radius: 5px;
+
+	color: #fefcf7;
+	font-family: "Fraunces", serif;
+	font-size: 1.8rem;
+	letter-spacing: 0.5px;
+	line-height: 2.5rem;
+
+	padding: 0.8em 1.7em;
+
+	cursor: pointer;
+}

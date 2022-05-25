@@ -1,11 +1,8 @@
-.container-features {
-	text-align: center;
-
-	margin: 0 auto;
-	width: 87%;
+.container-choose {
+	margin-bottom: 450px;
 }
 
-.description-features {
+.description-choose {
 	color: #fefcf7;
 	font-family: "Barlow", sans-serif;
 	font-size: 1.5rem;
@@ -13,19 +10,30 @@
 	opacity: 80%;
 }
 
-.heading-features {
+.feature-cards-choose {
+	display: flex;
+	flex-direction: column;
+	gap: 2.4rem;
+
+	position: relative;
+	top: 320px;
+}
+
+.heading-choose {
 	color: #fefcf7;
 	font-size: 2.8rem;
 
 	margin: 0 0 2.4rem 0;
 }
 
-.intro-features {
+.intro-choose {
 	background-color: #2c343e;
-	border-radius: 10px;
 
+	left: 0;
+	right: 0;
 	padding: 6.4rem 2.4rem 66rem;
 	position: absolute;
-	width: 87%;
 	z-index: -1;
+
+	text-align: center;
 }

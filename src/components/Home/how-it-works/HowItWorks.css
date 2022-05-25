@@ -1,0 +1,21 @@
+.container-works {
+	margin: 0 auto 12rem;
+	width: 87%;
+
+	text-align: center;
+}
+
+.description-step-works,
+.name-step-works {
+	color: #333d4b;
+}
+
+.heading-works {
+	color: #83888f;
+	font-size: 2.4rem;
+	line-height: 3.2rem;
+}
+
+.plan-steps-works {
+	margin-top: 8rem;
+}

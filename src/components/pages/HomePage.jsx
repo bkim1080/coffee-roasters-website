@@ -1,15 +1,15 @@
 import React from "react";
-import Collection from "../home/Collection/Collection";
-import Features from "../home/Features/Features";
+import OurCollection from "../home/our-collection/OurCollection";
+import ChooseUs from "../home/choose-us/ChooseUs";
 import HeroHome from "../home/HeroHome";
-import HowItWorks from "../home/HowItWorks";
+import HowItWorks from "../home/how-it-works/HowItWorks";
 
 export default function HomePage() {
 	return (
 		<React.Fragment>
 			<HeroHome />
-			<Collection />
-			<Features />
+			<OurCollection />
+			<ChooseUs />
 			<HowItWorks />
 		</React.Fragment>
 	);

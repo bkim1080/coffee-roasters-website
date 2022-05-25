@@ -1,12 +1,12 @@
 import React from "react";
-import Steps from "../shared/Steps";
+import PlanSteps from "../UI/PlanSteps";
 import "./StepsSubscribe.css";
 
 export default function StepsSubscribe() {
 	return (
 		<section className="container-steps-subscribe">
 			<div className="contents-steps-subscribe">
-				<Steps headingClass="heading-step-subscribe" descriptionClass="description-step-subscribe" />
+				<PlanSteps headingClass="name-step-subscribe" descriptionClass="description-step-subscribe" />
 			</div>
 		</section>
 	);

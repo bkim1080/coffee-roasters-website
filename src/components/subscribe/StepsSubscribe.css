@@ -4,12 +4,16 @@
 
 	margin: 0 0 12rem 0;
 	padding: 8rem 0 8rem 0;
+
+	text-align: center;
 }
 
 .contents-steps-subscribe {
-	display: flex;
-	flex-direction: column;
-	gap: 5.6rem;
 	margin: 0 auto 0;
 	width: 87%;
+}
+
+.description-step-subscribe,
+.name-step-subscribe {
+	color: #ffffff;
 }
