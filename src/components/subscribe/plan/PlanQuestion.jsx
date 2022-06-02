@@ -12,6 +12,7 @@ export default function Question(props) {
 	useEffect(() => {
 		if (ctx.planDetails.coffeeForm === "Capsule" && props.question.disable) {
 			setIsDisabled(true);
+			setIsShown(false);
 		} else {
 			setIsDisabled(false);
 		}
@@ -22,8 +23,11 @@ export default function Question(props) {
 	}
 
 	return (
-		<div className={`container-question ${isDisabled ? "disabled" : ""}`}>
-			<div onClick={isDisabled ? undefined : showOptionsHandler} className="heading-container-question">
+		<div className="container-question">
+			<div
+				onClick={isDisabled ? undefined : showOptionsHandler}
+				className={`heading-container-question ${isDisabled ? "disabled" : ""}`}
+			>
 				<h2 className="heading-question">{props.question.question}</h2>
 				<img
 					className={`arrow-image-question ${isShown ? "shown" : ""}`}
