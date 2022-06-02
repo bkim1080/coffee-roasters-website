@@ -1,15 +1,15 @@
 import React, { useContext, useState, useEffect } from "react";
 
-import Question from "./Question";
+import Question from "./PlanQuestion";
 
-import { questionsList } from "../../../data";
+import { planQuestionsList } from "../../../data";
 
-import "./Questions.css";
+import "./PlanQuestions.css";
 
 export default function Questions() {
 	return (
 		<section className="container-questions">
-			{questionsList.map((question) => {
+			{planQuestionsList.map((question) => {
 				return <Question key={question.id} question={question} />;
 			})}
 		</section>

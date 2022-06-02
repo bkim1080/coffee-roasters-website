@@ -112,7 +112,7 @@ export const headquartersList = [
 	},
 ];
 
-export const questionsList = [
+export const planQuestionsList = [
 	{
 		id: 1,
 		question: "How do you drink your coffee?",
@@ -225,20 +225,20 @@ export const questionsList = [
 		options: [
 			{
 				id: 1,
-				name: "Every week",
-				description: "$7.20 per shipment. Includes free first-class shipping.",
+				name: "Every Week",
+				description: "per shipment. Includes free first-class shipping.",
 				type: "deliverySchedule",
 			},
 			{
 				id: 2,
-				name: "Every 2 weeks",
-				description: "$9.60 per shipment. Includes free priority shipping.",
+				name: "Every 2 Weeks",
+				description: "per shipment. Includes free priority shipping.",
 				type: "deliverySchedule",
 			},
 			{
 				id: 3,
-				name: "Every month",
-				description: "$12.00 per shipment. Includes free priority shipping.",
+				name: "Every Month",
+				description: "per shipment. Includes free priority shipping.",
 				type: "deliverySchedule",
 			},
 		],

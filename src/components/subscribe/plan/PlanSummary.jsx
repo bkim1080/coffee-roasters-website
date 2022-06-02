@@ -4,7 +4,7 @@ import Button from "../../UI/Button";
 import Card from "../../UI/Card";
 import PlanContext from "../../../context/plan-context";
 
-import "./OrderSummary.css";
+import "./PlanSummary.css";
 
 export default function OrderSummary() {
 	const ctx = useContext(PlanContext);

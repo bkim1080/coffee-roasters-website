@@ -1,13 +1,14 @@
 import React, { useState, useContext, useEffect } from "react";
-import Options from "./Options";
+import Options from "./PlanOptions";
 import PlanContext from "../../../context/plan-context";
-import "./Question.css";
+import "./PlanQuestion.css";
 
 export default function Question(props) {
 	const ctx = useContext(PlanContext);
 	const [isShown, setIsShown] = useState(false);
 	const [isDisabled, setIsDisabled] = useState(false);
 
+	//diable the "Want us to grind them?" question if 'Capsule' is chosen
 	useEffect(() => {
 		if (ctx.planDetails.coffeeForm === "Capsule" && props.question.disable) {
 			setIsDisabled(true);
