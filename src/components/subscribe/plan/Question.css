@@ -1,3 +1,8 @@
+.container-question.disabled {
+	opacity: 50%;
+	cursor: default;
+}
+
 .heading-question {
 	color: #83888f;
 	width: 24rem;
@@ -16,6 +21,6 @@
 	align-self: center;
 }
 
-.arrow-image-question.isShown {
+.arrow-image-question.shown {
 	transform: rotate(180deg);
 }

@@ -1,7 +1,9 @@
 import React from "react";
+
+import { PlanContextProvider } from "../../context/plan-context";
+
 import HeroSubscribe from "../subscribe/HeroSubscribe";
-import Order from "../subscribe/plan/Order";
-import Questions from "../subscribe/plan/Questions";
+import PlanSubscribe from "../subscribe/plan/PlanSubscribe";
 import StepsSubscribe from "../subscribe/StepsSubscribe";
 
 export default function SubscribePage() {
@@ -9,8 +11,9 @@ export default function SubscribePage() {
 		<React.Fragment>
 			<HeroSubscribe />
 			<StepsSubscribe />
-			<Questions />
-			<Order />
+			<PlanContextProvider>
+				<PlanSubscribe />
+			</PlanContextProvider>
 		</React.Fragment>
 	);
 }

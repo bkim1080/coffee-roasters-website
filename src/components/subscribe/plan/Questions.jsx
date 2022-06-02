@@ -1,6 +1,9 @@
-import React from "react";
+import React, { useContext, useState, useEffect } from "react";
+
 import Question from "./Question";
+
 import { questionsList } from "../../../data";
+
 import "./Questions.css";
 
 export default function Questions() {

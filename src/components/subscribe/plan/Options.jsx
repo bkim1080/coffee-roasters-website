@@ -6,7 +6,7 @@ export default function Options(props) {
 	return (
 		<div className="container-options">
 			{props.question.options.map((option) => {
-				return <Option key={props.question.id} option={option} />;
+				return <Option key={option.id} option={option} question={props.question} />;
 			})}
 		</div>
 	);
