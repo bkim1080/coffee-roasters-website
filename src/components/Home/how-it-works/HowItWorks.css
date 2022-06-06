@@ -1,3 +1,6 @@
+.button-works {
+}
+
 .container-works {
 	margin: 0 auto 12rem;
 	width: 87%;
@@ -17,5 +20,6 @@
 }
 
 .plan-steps-works {
+	margin-bottom: 8rem;
 	margin-top: 8rem;
 }

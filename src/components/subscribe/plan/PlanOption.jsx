@@ -49,7 +49,11 @@ export default function Option(props) {
 		}
 
 		// lift state up to 'PlanOptions' component
-		// props.onSelectOption({ [props.option.type]: props.option.name });
+		// if (!props.optionsGroup[props.option.type] === props.option.name) {
+		// 	props.onSelectOption({ [props.option.type]: props.option.name });
+		// } else if (props.optionsGroup[props.option.type] === props.option.name) {
+		// 	props.onSelectOption({ [props.option.type]: "" });
+		// }
 	}
 
 	// console.log(isSelected);

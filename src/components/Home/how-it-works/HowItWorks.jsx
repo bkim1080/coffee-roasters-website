@@ -12,7 +12,7 @@ export default function Plan() {
 				<PlanSteps headingClass="name-step-works" descriptionClass="description-step-works" />
 			</div>
 			<Link to="/subscribe">
-				<Button>Create your plan</Button>
+				<Button className="button-works">Create your plan</Button>
 			</Link>
 		</section>
 	);

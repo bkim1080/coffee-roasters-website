@@ -5,7 +5,7 @@ import "./PlanOptions.css";
 export default function Options(props) {
 	// const [optionsGroup, setOptionsGroup] = useState({});
 
-	// const selectionOptionHandler = (selectedOption) => {
+	// const selectOptionHandler = (selectedOption) => {
 	// 	setOptionsGroup((prevOptionsGroup) => {
 	// 		return { ...prevOptionsGroup, ...selectedOption };
 	// 	});
@@ -21,7 +21,8 @@ export default function Options(props) {
 						key={option.id}
 						option={option}
 						question={props.question}
-						// onSelectOption={selectionOptionHandler}
+						// onSelectOption={selectOptionHandler}
+						// optionsGroup={optionsGroup}
 					/>
 				);
 			})}

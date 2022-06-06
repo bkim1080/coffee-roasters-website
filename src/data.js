@@ -1,7 +1,7 @@
 export const pageLinks = [
-	{ id: 1, url: "/", text: "HOME" },
-	{ id: 2, url: "/aboutus", text: "ABOUT US" },
-	{ id: 3, url: "/subscribe", text: "CREATE YOUR PLAN" },
+	{ id: 1, url: "/", text: "Home" },
+	{ id: 2, url: "/aboutus", text: "About Us" },
+	{ id: 3, url: "/subscribe", text: "Create Your Plan" },
 ];
 
 export const coffeeList = [

@@ -10,10 +10,9 @@ export default function Footer() {
 				<div className="links-footer">
 					<ul className="links-list-footer">
 						{pageLinks.map((link) => {
-							const { id, url, text } = link;
 							return (
-								<li className="links-list-item-footer" key={id}>
-									<a href={url}>{text}</a>
+								<li className="links-list-item-footer" key={link.id}>
+									<a href={link.url}>{link.text}</a>
 								</li>
 							);
 						})}
