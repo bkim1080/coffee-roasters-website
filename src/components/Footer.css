@@ -16,7 +16,17 @@
 
 .logo-footer {
 	align-self: center;
+	height: 24px;
+	width: 218px;
+
 	filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(306deg) brightness(104%) contrast(101%);
+}
+
+@media (min-width: 768px) {
+	.logo-footer {
+		height: 25px;
+		width: 235px;
+	}
 }
 
 .links-list-footer {
@@ -29,6 +39,14 @@
 	list-style: none;
 }
 
+@media (min-width: 768px) {
+	.links-list-footer {
+		flex-direction: row;
+		gap: 3.3rem;
+		justify-content: center;
+	}
+}
+
 .links-list-item-footer a {
 	color: #83888f;
 	font-family: "Barlow", sans-serif;
@@ -36,11 +54,6 @@
 	letter-spacing: 1px;
 	text-decoration: none;
 	text-transform: uppercase;
-}
-
-.logo-footer {
-	height: 24px;
-	width: 218px;
 }
 
 .social-icons-footer {

@@ -10,7 +10,7 @@ export default function Header() {
 				<div className="container-header">
 					<img className="logo-header" src="assets/img/shared/desktop/logo.svg" alt="coffeeroasters logo" />
 					<img
-						className="icon-hamburger-header"
+						className="menu-icon-header"
 						src={
 							isLinksShown
 								? "assets/img/shared/mobile/icon-close.svg"

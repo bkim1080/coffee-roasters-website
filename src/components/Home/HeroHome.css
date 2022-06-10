@@ -3,8 +3,14 @@
 	background-size: cover;
 }
 
+@media (min-width: 768px) {
+	.card-hero-home {
+		background-image: url("/public/assets/img/home/tablet/image-hero-coffeepress.jpg");
+	}
+}
+
 .container-hero-home {
-	margin-bottom: 12rem;
+	margin-bottom: 14.4rem;
 }
 
 .contents-hero-home {
@@ -14,10 +20,24 @@
 	width: 85%;
 }
 
+@media (min-width: 768px) {
+	.contents-hero-home {
+		margin-left: 5.8rem;
+		text-align: left;
+		width: 58%;
+	}
+}
+
 .heading-hero-home {
 	color: #fefcf7;
 	font-size: 4rem;
 	line-height: 4rem;
+}
+
+@media (min-width: 768px) {
+	.heading-hero-home {
+		width: 83%;
+	}
 }
 
 .description-hero-home {

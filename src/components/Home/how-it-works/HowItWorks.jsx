@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import PlanSteps from "../../UI/PlanSteps";
+import PlanSteps from "../../PlanSteps";
 import Button from "../../UI/Button";
 import "./HowItWorks.css";
 

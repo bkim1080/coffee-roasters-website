@@ -1,11 +1,17 @@
-.button-works {
-}
-
 .container-works {
 	margin: 0 auto 12rem;
 	width: 87%;
 
 	text-align: center;
+}
+
+@media (min-width: 768px) {
+	.container-works {
+		margin-bottom: 14.4rem;
+		width: 90%;
+
+		text-align: left;
+	}
 }
 
 .description-step-works,
@@ -20,6 +26,13 @@
 }
 
 .plan-steps-works {
-	margin-bottom: 8rem;
 	margin-top: 8rem;
+	margin-bottom: 8rem;
+}
+
+@media (min-width: 768px) {
+	.plan-steps-works {
+		margin-top: 12rem;
+		margin-bottom: 4.4rem;
+	}
 }

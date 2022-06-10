@@ -7,7 +7,7 @@ import "./ChooseUs.css";
 export default function ChooseUs() {
 	return (
 		<section className="container-choose">
-			<Card className="intro-choose">
+			<Card className="card-choose">
 				<h2 className="heading-choose">Why choose us?</h2>
 				<p className="description-choose">
 					A large part of our role is choosing which particular coffees will be featured in our range. This

@@ -4,6 +4,16 @@
 	gap: 5.6rem;
 }
 
+@media (min-width: 768px) {
+	.container-plan-steps {
+		flex-direction: row;
+		gap: 3rem;
+	}
+	.container-plan-steps > * {
+		flex: 1;
+	}
+}
+
 .description-step {
 	font-family: "Barlow", sans-serif;
 	font-size: 1.5rem;
@@ -17,7 +27,13 @@
 	margin: 2.4rem 0;
 }
 
-.num-step {
+@media (min-width: 768px) {
+	.name-step {
+		margin: 4.2rem 0 3.8rem;
+	}
+}
+
+.number-step {
 	color: #fdd6ba;
 	font-family: "Fraunces", serif;
 	font-size: 7.2rem;

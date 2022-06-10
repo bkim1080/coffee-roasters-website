@@ -1,13 +1,27 @@
-.coffee-collection {
+.coffeebean-collection {
 	display: flex;
 	flex-direction: column;
 	gap: 5.5rem;
+}
+
+@media (min-width: 768px) {
+	.coffeebean-collection {
+		margin: 0 auto;
+		width: 82%;
+		text-align: left;
+	}
 }
 
 .container-collection {
 	margin: 0 auto 12rem;
 	text-align: center;
 	width: 78%;
+}
+
+@media (min-width: 768px) {
+	.container-collection {
+		/* width: 90%; */
+	}
 }
 
 .heading-collection {
@@ -18,4 +32,12 @@
 	letter-spacing: 0.5px;
 
 	margin: 0 0 3rem 0;
+}
+
+@media (min-width: 768px) {
+	.heading-collection {
+		font-size: 9.6rem;
+		font-weight: 900;
+		/* opacity: 30%; */
+	}
 }
