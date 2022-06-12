@@ -1,16 +1,14 @@
 .container-works {
 	margin: 0 auto 12rem;
-	width: 87%;
-
 	text-align: center;
+	width: 87%;
 }
 
 @media (min-width: 768px) {
 	.container-works {
 		margin-bottom: 14.4rem;
-		width: 90%;
-
 		text-align: left;
+		width: 90%;
 	}
 }
 

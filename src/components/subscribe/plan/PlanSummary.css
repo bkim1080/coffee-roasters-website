@@ -15,6 +15,12 @@
 	width: 85%;
 }
 
+@media (min-width: 768px) {
+	.contents-plan-summary {
+		width: 87%;
+	}
+}
+
 .heading-plan-summary {
 	color: #ffffff;
 	font-family: "Barlow", sans-serif;

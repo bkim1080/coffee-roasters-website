@@ -61,3 +61,7 @@
 	justify-content: center;
 	gap: 2.5rem;
 }
+
+.social-icons-footer img {
+	display: block;
+}

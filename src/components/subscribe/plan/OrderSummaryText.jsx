@@ -1,10 +1,10 @@
 import React, { useContext } from "react";
-import PlanContext from "../../../context/plan-context";
+import PlanDetailsContext from "../../../context/plan-details-context";
 
 import "./OrderSummaryText.css";
 
 export default function OrderSummaryText(props) {
-	const ctx = useContext(PlanContext);
+	const ctx = useContext(PlanDetailsContext);
 
 	let planSummary = (
 		<p className={`description-summary-text ${props.className ? props.className : ""}`}>

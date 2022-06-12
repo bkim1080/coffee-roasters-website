@@ -1,10 +1,10 @@
 import React, { useState, useContext, useEffect } from "react";
-import Options from "./PlanOptions";
-import PlanContext from "../../../context/plan-context";
+import PlanOptions from "./PlanOptions";
+import PlanDetailsContext from "../../../context/plan-details-context";
 import "./PlanQuestion.css";
 
 export default function Question(props) {
-	const ctx = useContext(PlanContext);
+	const ctx = useContext(PlanDetailsContext);
 	const [isShown, setIsShown] = useState(false);
 	const [isDisabled, setIsDisabled] = useState(false);
 
@@ -35,7 +35,7 @@ export default function Question(props) {
 					alt="arrow icon"
 				/>
 			</div>
-			{isShown && <Options question={props.question} />}
+			{isShown && <PlanOptions question={props.question} />}
 		</div>
 	);
 }

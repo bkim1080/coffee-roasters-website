@@ -1,12 +1,11 @@
 import React, { useState } from "react";
 
-const PlanContext = React.createContext({ planDetails: {}, onSelectOption: () => {} });
+const PlanDetailsContext = React.createContext({ planDetails: {}, onSelectOption: () => {} });
 
-export default PlanContext;
+export default PlanDetailsContext;
 
-export const PlanContextProvider = (props) => {
+export const PlanDetailsContextProvider = (props) => {
 	const [planDetails, setPlanDetails] = useState({
-		// coffeeForm: "Capsule",
 		coffeeForm: "",
 		coffeeType: "",
 		coffeeAmount: "",
@@ -21,8 +20,8 @@ export const PlanContextProvider = (props) => {
 	};
 
 	return (
-		<PlanContext.Provider value={{ planDetails: planDetails, onSelectOption: selectOptionHandler }}>
+		<PlanDetailsContext.Provider value={{ planDetails: planDetails, onSelectOption: selectOptionHandler }}>
 			{props.children}
-		</PlanContext.Provider>
+		</PlanDetailsContext.Provider>
 	);
 };

@@ -8,6 +8,7 @@
 @media (min-width: 768px) {
 	.container-header {
 		margin: 4rem auto 5.3rem;
+		width: 90%;
 	}
 }
 

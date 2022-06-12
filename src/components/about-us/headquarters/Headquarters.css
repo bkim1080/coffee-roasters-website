@@ -1,17 +1,36 @@
 .container-headquarters {
+	margin-bottom: 12rem;
 	text-align: center;
-	margin: 0 0 12rem 0;
 }
 
-.container-headquarters-list {
-	display: flex;
-	flex-direction: column;
+@media (min-width: 768px) {
+	.container-headquarters {
+		margin: 0 auto 14.4rem;
+		text-align: left;
+		width: 90%;
+	}
 }
 
 .heading-headquarters {
 	color: #83888f;
-	font-size: 2.3rem;
+	font-size: 2.4rem;
 	line-height: 3.2rem;
 
 	margin: 0 0 7.2rem 0;
+}
+
+.list-headquarters {
+	display: flex;
+	flex-direction: column;
+	gap: 8rem;
+}
+
+@media (min-width: 768px) {
+	.list-headquarters {
+		align-items: flex-end;
+		flex-direction: row;
+	}
+	.list-headquarters > * {
+		flex: 1;
+	}
 }

@@ -1,15 +1,15 @@
-.container-plan-steps {
+.contents-plan-steps {
 	display: flex;
 	flex-direction: column;
 	gap: 5.6rem;
 }
 
 @media (min-width: 768px) {
-	.container-plan-steps {
+	.contents-plan-steps {
 		flex-direction: row;
-		gap: 3rem;
+		gap: 2rem;
 	}
-	.container-plan-steps > * {
+	.contents-plan-steps > * {
 		flex: 1;
 	}
 }

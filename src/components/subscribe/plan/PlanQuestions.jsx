@@ -1,6 +1,6 @@
 import React from "react";
 
-import Question from "./PlanQuestion";
+import PlanQuestion from "./PlanQuestion";
 
 import { planQuestionsList } from "../../../data";
 
@@ -10,7 +10,7 @@ export default function Questions() {
 	return (
 		<section className="container-questions">
 			{planQuestionsList.map((question) => {
-				return <Question key={question.id} question={question} />;
+				return <PlanQuestion key={question.id} question={question} />;
 			})}
 		</section>
 	);

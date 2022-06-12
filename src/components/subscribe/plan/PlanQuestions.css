@@ -6,3 +6,9 @@
 	margin: 0 auto 12rem;
 	width: 87%;
 }
+
+@media (min-width: 768px) {
+	.container-questions {
+		width: 90%;
+	}
+}

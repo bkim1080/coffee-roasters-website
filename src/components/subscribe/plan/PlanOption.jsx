@@ -1,9 +1,9 @@
 import React, { useState, useContext, useEffect } from "react";
-import PlanContext from "../../../context/plan-context";
+import PlanDetailsContext from "../../../context/plan-details-context";
 import "./PlanOption.css";
 
 export default function Option(props) {
-	const ctx = useContext(PlanContext);
+	const ctx = useContext(PlanDetailsContext);
 	const [isSelected, setIsSelected] = useState(false);
 	const [selectedOption, setSelectedOption] = useState("");
 

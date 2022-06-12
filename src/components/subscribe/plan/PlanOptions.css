@@ -3,3 +3,13 @@
 	flex-direction: column;
 	gap: 1.6rem;
 }
+
+@media (min-width: 768px) {
+	.container-options {
+		flex-direction: row;
+		gap: 1rem;
+	}
+	.container-options > * {
+		flex: 1;
+	}
+}
