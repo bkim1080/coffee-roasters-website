@@ -1,13 +1,44 @@
-import React from "react";
-import Card from "../../UI/Card";
+import React, { useContext } from "react";
+
 import Button from "../../UI/Button";
+import Card from "../../UI/Card";
 import OrderSummaryText from "./OrderSummaryText";
+
+import PlanDetailsContext from "../../../context/plan-details-context";
 
 import "./CheckoutModal.css";
 
 export default function CheckoutModal(props) {
+	const ctx = useContext(PlanDetailsContext);
+	let planPrice = "____";
+
+	if (ctx.planDetails.coffeeAmount === "250g") {
+		if (ctx.planDetails.deliverySchedule === "Every Week") {
+			planPrice = "$7.20";
+		} else if (ctx.planDetails.deliverySchedule === "Every 2 Weeks") {
+			planPrice = "$9.60";
+		} else if (ctx.planDetails.deliverySchedule === "Every Month") {
+			planPrice = "$12.00";
+		}
+	} else if (ctx.planDetails.coffeeAmount === "500g") {
+		if (ctx.planDetails.deliverySchedule === "Every Week") {
+			planPrice = "$13.00";
+		} else if (ctx.planDetails.deliverySchedule === "Every 2 Weeks") {
+			planPrice = "$17.50";
+		} else if (ctx.planDetails.deliverySchedule === "Every Month") {
+			planPrice = "$22.00";
+		}
+	} else if (ctx.planDetails.coffeeAmount === "1000g") {
+		if (ctx.planDetails.deliverySchedulee === "Every Week") {
+			planPrice = "$22.00";
+		} else if (ctx.planDetails.deliverySchedule === "Every 2 Weeks") {
+			planPrice = "$32.00";
+		} else if (ctx.planDetails.deliverySchedule === "Every Month") {
+			planPrice = "$42.00";
+		}
+	}
 	return (
-		<React.Fragment>
+		<div>
 			<div className="backdrop-checkout-modal" onClick={props.onClick} />
 			<Card className="container-checkout-modal">
 				<div className="heading-checkout-modal">
@@ -20,10 +51,10 @@ export default function CheckoutModal(props) {
 							Is this correct? You can proceed to checkout or go back to plan selection if something is
 							off. Subscription discount codes can also be redeemed at the checkout.
 						</p>
-						<Button onClick={props.onClick}>Checkout - $14.00 / mo</Button>
+						<Button onClick={props.onClick}>Checkout - {planPrice} / mo</Button>
 					</div>
 				</div>
 			</Card>
-		</React.Fragment>
+		</div>
 	);
 }

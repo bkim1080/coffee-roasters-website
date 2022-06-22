@@ -13,11 +13,17 @@ export const PlanDetailsContextProvider = (props) => {
 		deliverySchedule: "",
 	});
 
-	const selectOptionHandler = (selectedOption) => {
+	const selectOptionHandler = (event) => {
+		const { name, value } = event.target;
 		setPlanDetails((prevPlanDetails) => {
-			return { ...prevPlanDetails, ...selectedOption };
+			return {
+				...prevPlanDetails,
+				[name]: value,
+			};
 		});
 	};
+
+	// console.log("CONTEXT RENDERED!!!!!");
 
 	return (
 		<PlanDetailsContext.Provider value={{ planDetails: planDetails, onSelectOption: selectOptionHandler }}>

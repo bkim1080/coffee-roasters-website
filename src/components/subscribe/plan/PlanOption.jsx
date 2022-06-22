@@ -1,11 +1,13 @@
 import React, { useState, useContext, useEffect } from "react";
+
 import PlanDetailsContext from "../../../context/plan-details-context";
+
 import "./PlanOption.css";
 
 export default function Option(props) {
 	const ctx = useContext(PlanDetailsContext);
 	const [isSelected, setIsSelected] = useState(false);
-	const [selectedOption, setSelectedOption] = useState("");
+	// const [selectedOption, setSelectedOption] = useState("");
 
 	// dynamically set price in delivery option descriptions
 	let deliveryPrice = "____";
@@ -36,38 +38,49 @@ export default function Option(props) {
 		}
 	}
 
-	function selectOptionHandler() {
-		setIsSelected((prevIsSelected) => !prevIsSelected);
-
-		// update plan details
-		if (!selectedOption) {
-			setSelectedOption({ [props.option.type]: props.option.name });
+	useEffect(() => {
+		// update plan details context (new)
+		if (isSelected) {
 			ctx.onSelectOption({ [props.option.type]: props.option.name });
-		} else if (selectedOption) {
-			setSelectedOption("");
+		} else if (!isSelected) {
 			ctx.onSelectOption({ [props.option.type]: "" });
 		}
 
-		// lift state up to 'PlanOptions' component
-		// if (!props.optionsGroup[props.option.type] === props.option.name) {
-		// 	props.onSelectOption({ [props.option.type]: props.option.name });
-		// } else if (props.optionsGroup[props.option.type] === props.option.name) {
-		// 	props.onSelectOption({ [props.option.type]: "" });
+		// send isSelected data up to 'PlanOptions' component to store along with the other 2 options isSlected data
+		props.onOptionsSelected({ [props.option.name]: isSelected });
+
+		// // prevent the remaining options from being selected if one of the options is selected
+		// if (props[`${[props.option.type]}SingleSelect`][props.option.name] === false) {
+		// 	setIsSelected(false);
 		// }
+
+		// console.log("PlanOption UseEffect");
+	}, [isSelected]);
+
+	function selectOptionHandler() {
+		setIsSelected((prevIsSelected) => !prevIsSelected);
+
+		// // update plan details context (original)
+		// if (!selectedOption) {
+		// 	setSelectedOption({ [props.option.type]: props.option.name });
+		// 	ctx.onSelectOption({ [props.option.type]: props.option.name });
+		// } else if (selectedOption) {
+		// 	setSelectedOption("");
+		// 	ctx.onSelectOption({ [props.option.type]: "" });
 	}
 
 	// console.log(isSelected);
 	// console.log(selectedOption);
-	// console.log(ctx.planDetails);
+	console.log(ctx.planDetails);
 
 	return (
-		<div className={`container-option ${isSelected ? "selected" : ""}`} onClick={selectOptionHandler}>
+		<button className={`container-option ${isSelected ? "selected" : ""}`} onClick={selectOptionHandler}>
 			<div className="contents-option">
 				<h4 className={`heading-option ${isSelected ? "selected" : ""}`}>{props.option.name}</h4>
 				<p className={`description-option ${isSelected ? "selected" : ""}`}>
 					{props.option.type === "deliverySchedule" && deliveryPrice} {props.option.description}
 				</p>
 			</div>
-		</div>
+		</button>
 	);
 }
