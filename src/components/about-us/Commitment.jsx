@@ -3,15 +3,23 @@ import React, { useState, useEffect } from "react";
 import "./Commitment.css";
 
 export default function Commitment() {
-	const [isTablet, setIsTablet] = useState(window.innerWidth >= 768);
+	const [isTablet, setIsTablet] = useState(window.innerWidth >= 768 && window.innerWidth < 1440);
+	const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 1440);
 
-	const updateImage = () => {
-		setIsTablet(window.innerWidth >= 768);
+	const updateTabletImage = () => {
+		setIsTablet(window.innerWidth >= 768 && window.innerWidth < 1440);
+	};
+	const updateDesktopImage = () => {
+		setIsDesktop(window.innerWidth >= 1440);
 	};
 
 	useEffect(() => {
-		window.addEventListener("resize", updateImage);
-		return () => window.removeEventListener("resize", updateImage);
+		window.addEventListener("resize", updateTabletImage);
+		window.addEventListener("resize", updateDesktopImage);
+		return () => {
+			window.removeEventListener("resize", updateTabletImage);
+			window.removeEventListener("resize", updateDesktopImage);
+		};
 	});
 
 	return (
@@ -21,6 +29,12 @@ export default function Commitment() {
 					<img
 						className="image-commitment"
 						src="/assets/img/about/tablet/image-commitment.jpg"
+						alt="barista pouring cream"
+					/>
+				) : isDesktop ? (
+					<img
+						className="image-commitment"
+						src="/assets/img/about/desktop/image-commitment.jpg"
 						alt="barista pouring cream"
 					/>
 				) : (

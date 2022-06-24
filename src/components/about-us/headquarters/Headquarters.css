@@ -11,12 +11,19 @@
 	}
 }
 
+@media (min-width: 1440px) {
+	.container-headquarters {
+		width: 77%;
+		margin-bottom: 16.8rem;
+	}
+}
+
 .heading-headquarters {
 	color: #83888f;
 	font-size: 2.4rem;
 	line-height: 3.2rem;
 
-	margin: 0 0 7.2rem 0;
+	margin-bottom: 7.2rem;
 }
 
 .list-headquarters {

@@ -12,6 +12,12 @@
 	}
 }
 
+@media (min-width: 1440px) {
+	.card-quality {
+		top: 9rem;
+	}
+}
+
 .container-quality {
 	margin-bottom: 20rem;
 }
@@ -22,12 +28,25 @@
 	}
 }
 
+@media (min-width: 1440px) {
+	.container-quality {
+		margin-bottom: 27rem;
+	}
+}
+
 .description-quality {
 	color: #fefcf7;
 	font-family: "Barlow", sans-serif;
 	font-size: 1.5rem;
 	line-height: 2.5rem;
 	opacity: 80%;
+}
+
+@media (min-width: 1440px) {
+	.description-quality {
+		font-size: 1.6rem;
+		line-height: 2.6rem;
+	}
 }
 
 .heading-quality {
@@ -45,19 +64,31 @@
 	}
 }
 
+@media (min-width: 1440px) {
+	.heading-quality {
+		font-size: 4rem;
+	}
+}
+
 .image-quality {
 	border-radius: 10px;
 
 	max-width: 100%;
 	position: absolute;
-	left: 13%;
-	/* right: 13%; */
+	right: 13%;
 	width: 74%;
+}
+
+@media (min-width: 1440px) {
+	.image-quality {
+		right: 11%;
+		width: 31%;
+	}
 }
 
 .text-quality {
 	margin: 0 auto;
-	padding: 37vw 0 6rem 0;
+	padding: 37vw 0 6rem;
 	text-align: center;
 	width: 85%;
 }
@@ -65,7 +96,15 @@
 @media (min-width: 768px) {
 	.text-quality {
 		padding-top: 22rem;
-		margin: 0 auto;
 		width: 78%;
+	}
+}
+
+@media (min-width: 1440px) {
+	.text-quality {
+		margin-left: 8.5rem;
+		padding: 8.8rem 0 17.6rem;
+		text-align: left;
+		width: 42%;
 	}
 }

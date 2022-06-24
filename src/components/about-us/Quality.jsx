@@ -3,21 +3,31 @@ import Card from "../UI/Card";
 import "./Quality.css";
 
 export default function Quality() {
-	const [isTablet, setIsTablet] = useState(window.innerWidth >= 768);
+	const [isTablet, setIsTablet] = useState(window.innerWidth >= 768 && window.innerWidth < 1440);
+	const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 1440);
 
-	const updateImage = () => {
-		setIsTablet(window.innerWidth >= 768);
+	const updateTabletImage = () => {
+		setIsTablet(window.innerWidth >= 768 && window.innerWidth < 1440);
+	};
+	const updateDesktopImage = () => {
+		setIsDesktop(window.innerWidth >= 1440);
 	};
 
 	useEffect(() => {
-		window.addEventListener("resize", updateImage);
-		return () => window.removeEventListener("resize", updateImage);
+		window.addEventListener("resize", updateTabletImage);
+		window.addEventListener("resize", updateDesktopImage);
+		return () => {
+			window.removeEventListener("resize", updateTabletImage);
+			window.removeEventListener("resize", updateDesktopImage);
+		};
 	});
 
 	return (
 		<section className="container-quality">
 			{isTablet ? (
 				<img className="image-quality" src="/assets/img/about/tablet/image-quality.jpg" alt="cup of coffee" />
+			) : isDesktop ? (
+				<img className="image-quality" src="/assets/img/about/desktop/image-quality.jpg" alt="cup of coffee" />
 			) : (
 				<img className="image-quality" src="/assets/img/about/mobile/image-quality.jpg" alt="cup of coffee" />
 			)}
