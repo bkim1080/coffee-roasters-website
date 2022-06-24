@@ -12,6 +12,13 @@
 	}
 }
 
+@media (min-width: 1440px) {
+	.container-header {
+		margin-bottom: 4.3rem;
+		width: 90%;
+	}
+}
+
 .menu-icon-header {
 	align-self: center;
 }
@@ -100,14 +107,14 @@
 }
 
 .logo-header {
+	height: 18px;
 	vertical-align: bottom;
 	width: 163px;
-	height: 18px;
 }
 
 @media (min-width: 768px) {
 	.logo-header {
-		width: 236px;
 		height: 26px;
+		width: 236px;
 	}
 }

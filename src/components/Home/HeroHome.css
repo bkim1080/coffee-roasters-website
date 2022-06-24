@@ -9,8 +9,25 @@
 	}
 }
 
+@media (min-width: 1440px) {
+	.card-hero-home {
+		background-image: url("/public/assets/img/home/desktop/image-hero-coffeepress.jpg");
+	}
+}
+
 .container-hero-home {
-	margin-bottom: 14.4rem;
+	margin-bottom: 12rem;
+}
+
+@media (min-width: 768px) {
+	.container-hero-home {
+		margin-bottom: 15rem;
+	}
+}
+@media (min-width: 1440px) {
+	.container-hero-home {
+		margin-bottom: 18rem;
+	}
 }
 
 .contents-hero-home {
@@ -22,9 +39,15 @@
 
 @media (min-width: 768px) {
 	.contents-hero-home {
-		margin-left: 5.8rem;
 		text-align: left;
-		width: 58%;
+		width: 83%;
+	}
+}
+
+@media (min-width: 1440px) {
+	.contents-hero-home {
+		padding: 11.7rem 0;
+		width: 87%;
 	}
 }
 
@@ -36,7 +59,16 @@
 
 @media (min-width: 768px) {
 	.heading-hero-home {
-		width: 83%;
+		width: 48%;
+	}
+}
+
+@media (min-width: 1440px) {
+	.heading-hero-home {
+		font-size: 7.2rem;
+		line-height: 7.2rem;
+
+		width: 41%;
 	}
 }
 
@@ -48,4 +80,20 @@
 	opacity: 80%;
 
 	margin: 2.6rem 0 3.8rem;
+}
+
+@media (min-width: 768px) {
+	.description-hero-home {
+		width: 65%;
+	}
+}
+
+@media (min-width: 1440px) {
+	.description-hero-home {
+		font-size: 1.6rem;
+		line-height: 2.6rem;
+
+		margin: 3.2rem 0 5.6rem;
+		width: 35%;
+	}
 }

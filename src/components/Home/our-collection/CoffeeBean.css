@@ -1,0 +1,72 @@
+.container-coffeebean {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	gap: 2.4rem;
+
+	margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+	.container-coffeebean {
+		flex-direction: row;
+		gap: 3.5rem;
+	}
+}
+
+@media (min-width: 1440px) {
+	.container-coffeebean {
+		flex-direction: column;
+	}
+}
+
+.description-coffeebean {
+	color: #333d4b;
+	font-family: "Barlow", sans-serif;
+	font-size: 1.5rem;
+	line-height: 2.5rem;
+}
+
+@media (min-width: 1440px) {
+	.description-coffeebean {
+		font-size: 1.6rem;
+		line-height: 2.6rem;
+	}
+}
+
+.heading-coffeebean {
+	color: #333d4b;
+	font-size: 2.4rem;
+	line-height: 3.2rem;
+
+	margin-bottom: 1.6rem;
+}
+
+@media (min-width: 1440px) {
+	.heading-coffeebean {
+		margin-bottom: 2.4rem;
+	}
+}
+
+.image-coffeebean {
+	margin: 0 auto;
+
+	height: 150px;
+	width: 190px;
+}
+
+@media (min-width: 768px) {
+	.image-coffeebean {
+		margin: 0;
+
+		height: 190px;
+		width: 241px;
+	}
+}
+
+@media (min-width: 1440px) {
+	.image-coffeebean {
+		height: 180px;
+		width: 229px;
+	}
+}

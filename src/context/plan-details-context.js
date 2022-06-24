@@ -23,8 +23,6 @@ export const PlanDetailsContextProvider = (props) => {
 		});
 	};
 
-	// console.log("CONTEXT RENDERED!!!!!");
-
 	return (
 		<PlanDetailsContext.Provider value={{ planDetails: planDetails, onSelectOption: selectOptionHandler }}>
 			{props.children}

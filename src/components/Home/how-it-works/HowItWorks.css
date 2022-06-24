@@ -12,6 +12,14 @@
 	}
 }
 
+@media (min-width: 1440px) {
+	.container-works {
+		margin-bottom: 20rem;
+		margin-left: 11.5%;
+		width: 73%;
+	}
+}
+
 .description-step-works,
 .name-step-works {
 	color: #333d4b;
@@ -30,7 +38,12 @@
 
 @media (min-width: 768px) {
 	.plan-steps-works {
-		margin-top: 12rem;
 		margin-bottom: 4.4rem;
+	}
+}
+
+@media (min-width: 1440px) {
+	.plan-steps-works {
+		margin-bottom: 6.4rem;
 	}
 }

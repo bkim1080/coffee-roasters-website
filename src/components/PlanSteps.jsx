@@ -4,7 +4,7 @@ import "./PlanSteps.css";
 
 export default function PlanSteps(props) {
 	return (
-		<div className="contents-plan-steps">
+		<div className="container-steps">
 			{stepsList.map((step) => {
 				return (
 					<div key={step.id}>

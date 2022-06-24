@@ -17,7 +17,7 @@ export default function Header() {
 								: "assets/img/shared/mobile/icon-hamburger.svg"
 						}
 						alt="dropdown menu icon"
-						onClick={() => setIsLinksShown(!isLinksShown)}
+						onClick={() => setIsLinksShown((prevIsLinksShown) => !prevIsLinksShown)}
 					/>
 					<div className="links-desktop-header">
 						<ul className="links-list-desktop-header">

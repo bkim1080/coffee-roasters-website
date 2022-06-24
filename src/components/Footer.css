@@ -4,7 +4,6 @@
 	text-align: center;
 
 	margin: 0 auto;
-	padding: 5.4rem 0;
 }
 
 .content-footer {
@@ -12,6 +11,16 @@
 	flex-direction: column;
 	justify-content: space-between;
 	gap: 5rem;
+	padding: 5.4rem 0;
+}
+
+@media (min-width: 1440px) {
+	.content-footer {
+		flex-direction: row;
+		margin: 0 auto;
+		padding: 4.7rem 0;
+		width: 77%;
+	}
 }
 
 .logo-footer {

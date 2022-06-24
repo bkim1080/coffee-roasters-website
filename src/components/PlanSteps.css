@@ -1,16 +1,22 @@
-.contents-plan-steps {
+.container-steps {
 	display: flex;
 	flex-direction: column;
 	gap: 5.6rem;
 }
 
 @media (min-width: 768px) {
-	.contents-plan-steps {
+	.container-steps {
 		flex-direction: row;
-		gap: 2rem;
+		gap: 3rem;
 	}
-	.contents-plan-steps > * {
+	.container-steps > * {
 		flex: 1;
+	}
+}
+
+@media (min-width: 1440px) {
+	.container-steps {
+		gap: 9.5rem;
 	}
 }
 
@@ -18,6 +24,13 @@
 	font-family: "Barlow", sans-serif;
 	font-size: 1.5rem;
 	line-height: 2.5rem;
+}
+
+@media (min-width: 1400px) {
+	.description-step {
+		font-size: 1.6rem;
+		line-height: 2.6rem;
+	}
 }
 
 .name-step {
@@ -30,6 +43,15 @@
 @media (min-width: 768px) {
 	.name-step {
 		margin: 4.2rem 0 3.8rem;
+	}
+}
+
+@media (min-width: 1400px) {
+	.name-step {
+		font-size: 3.2rem;
+		line-height: 3.6rem;
+		margin: 3.8rem 0 4.2rem;
+		width: 89%;
 	}
 }
 

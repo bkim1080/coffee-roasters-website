@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react";
+import React, { useContext } from "react";
 
 import PlanDetailsContext from "../../../context/plan-details-context";
 
@@ -35,8 +35,6 @@ export default function PlanOptionRadio(props) {
 			deliveryPrice = "$42.00";
 		}
 	}
-
-	console.log(ctx.planDetails);
 
 	return (
 		<div className="container-option">
