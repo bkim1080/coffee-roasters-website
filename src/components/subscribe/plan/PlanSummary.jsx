@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 
 import Button from "../../UI/Button";
-import Card from "../../UI/Card";
 import CheckoutModal from "./CheckoutModal";
 import OrderSummaryText from "./OrderSummaryText";
 
@@ -19,13 +18,15 @@ export default function PlanSummary() {
 	return (
 		<section className="container-plan-summary">
 			{isCheckoutModalShown && <CheckoutModal onClick={checkoutHandler} />}
-			<Card className="card-plan-summary">
+			<div className="card-plan-summary">
 				<div className="contents-plan-summary">
 					<p className="heading-plan-summary">ORDER SUMMARY</p>
 					<OrderSummaryText className="text-plan-summary" />
 				</div>
-			</Card>
-			<Button onClick={checkoutHandler}>Create my plan!</Button>
+			</div>
+			<Button className="button-plan-summary" onClick={checkoutHandler}>
+				Create my plan!
+			</Button>
 		</section>
 	);
 }

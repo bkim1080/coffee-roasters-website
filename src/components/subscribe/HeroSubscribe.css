@@ -9,8 +9,26 @@
 	}
 }
 
+@media (min-width: 1440px) {
+	.card-hero-subscribe {
+		background-image: url("/public/assets/img/plan/desktop/image-hero-blackcup.jpg");
+	}
+}
+
 .container-hero-subscribe {
-	margin-bottom: 14.4rem;
+	margin-bottom: 12rem;
+}
+
+@media (min-width: 768px) {
+	.container-hero-subscribe {
+		margin-bottom: 14.4rem;
+	}
+}
+
+@media (min-width: 1440px) {
+	.container-hero-subscribe {
+		margin-bottom: 16.8rem;
+	}
 }
 
 .contents-hero-subscribe {
@@ -22,10 +40,16 @@
 
 @media (min-width: 768px) {
 	.contents-hero-subscribe {
-		margin-left: 5.8rem;
 		padding: 12.6rem 0;
 		text-align: left;
-		width: 57%;
+		width: 83%;
+	}
+}
+
+@media (min-width: 1440px) {
+	.contents-hero-subscribe {
+		padding: 13.4rem 0;
+		width: 87%;
 	}
 }
 
@@ -44,10 +68,32 @@
 	}
 }
 
+@media (min-width: 1440px) {
+	.heading-hero-subscribe {
+		font-size: 7.2rem;
+		line-height: 7.2rem;
+	}
+}
+
 .description-hero-subscribe {
 	color: #fefcf7;
-	font-size: 1.5rem;
 	font-family: "Barlow", sans-serif;
+	font-size: 1.5rem;
 	line-height: 2.5rem;
 	opacity: 80%;
+}
+
+@media (min-width: 748px) {
+	.description-hero-subscribe {
+		width: 68%;
+	}
+}
+
+@media (min-width: 1440px) {
+	.description-hero-subscribe {
+		font-size: 1.6rem;
+		line-height: 2.6rem;
+
+		width: 40%;
+	}
 }

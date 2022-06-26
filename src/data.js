@@ -83,7 +83,7 @@ export const headquartersList = [
 	{
 		id: 1,
 		image: "illustration-uk.svg",
-		country: "UK",
+		country: "United Kingdom",
 		street: "68  Asfordby Rd",
 		town1: "Alcaston",
 		town2: "SY6 1YA",
@@ -127,7 +127,7 @@ export const planQuestionsList = [
 			},
 			{
 				id: 2,
-				name: "Filter",
+				name: "Filtered",
 				description: "For pour over or drip methods like Aeropress, Chemex, and V60.",
 				type: "coffeeForm",
 			},

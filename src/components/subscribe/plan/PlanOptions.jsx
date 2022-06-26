@@ -1,6 +1,6 @@
 import React from "react";
-import PlanOptionRadio from "./PlanOptionRadio";
-import "./PlanOptionsRadio.css";
+import PlanOptionRadio from "./PlanOption";
+import "./PlanOptions.css";
 
 export default function PlanOptionsRadio(props) {
 	return (

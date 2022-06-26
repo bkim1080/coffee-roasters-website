@@ -15,11 +15,17 @@
 	}
 }
 
+@media (min-width: 1440px) {
+	.heading-question {
+		font-size: 4rem;
+
+		width: 100%;
+	}
+}
+
 .heading-container-question {
 	display: flex;
 	justify-content: space-between;
-
-	margin: 0 0 3.2rem 0;
 
 	cursor: pointer;
 }

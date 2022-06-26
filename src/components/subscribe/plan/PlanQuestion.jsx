@@ -1,5 +1,5 @@
 import React, { useState, useContext, useEffect } from "react";
-import PlanOptionsRadio from "./PlanOptionsRadio";
+import PlanOptions from "./PlanOptions";
 import PlanDetailsContext from "../../../context/plan-details-context";
 import "./PlanQuestion.css";
 
@@ -8,7 +8,7 @@ export default function Question(props) {
 	const [isShown, setIsShown] = useState(false);
 	const [isDisabled, setIsDisabled] = useState(false);
 
-	//diable the "Want us to grind them?" question if 'Capsule' is chosen
+	//diable the "Want us to grind them?" question if 'Capsule' option is selected
 	useEffect(() => {
 		if (ctx.planDetails.coffeeForm === "Capsule" && props.planQuestion.disable) {
 			setIsDisabled(true);
@@ -21,8 +21,6 @@ export default function Question(props) {
 	function showOptionsHandler() {
 		setIsShown((prevIsShown) => !prevIsShown);
 	}
-
-	// console.log("PlanQuestion rendered");
 
 	return (
 		<div className="container-question">
@@ -37,7 +35,7 @@ export default function Question(props) {
 					alt="arrow icon"
 				/>
 			</div>
-			{isShown && <PlanOptionsRadio planQuestion={props.planQuestion} />}
+			{isShown && <PlanOptions planQuestion={props.planQuestion} />}
 		</div>
 	);
 }
