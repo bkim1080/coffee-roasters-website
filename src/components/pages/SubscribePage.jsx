@@ -3,9 +3,8 @@ import React from "react";
 import { PlanDetailsContextProvider } from "../../context/plan-details-context";
 
 import HeroSubscribe from "../subscribe/HeroSubscribe";
-import PlanQuestions from "../subscribe/plan/PlanQuestions";
-import PlanSummary from "../subscribe/plan/PlanSummary";
 import StepsSubscribe from "../subscribe/StepsSubscribe";
+import Plan from "../subscribe/plan/Plan";
 
 export default function SubscribePage() {
 	return (
@@ -13,8 +12,7 @@ export default function SubscribePage() {
 			<HeroSubscribe />
 			<StepsSubscribe />
 			<PlanDetailsContextProvider>
-				<PlanQuestions />
-				<PlanSummary />
+				<Plan />
 			</PlanDetailsContextProvider>
 		</React.Fragment>
 	);

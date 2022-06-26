@@ -1,0 +1,38 @@
+.container-plan-list {
+	font-family: Fraunces, serif;
+	font-size: 2.4rem;
+	line-height: 3.2rem;
+
+	width: 35%;
+}
+
+.container-plan-list ul {
+	list-style: none;
+}
+
+.item-plan-list {
+	color: #83888f;
+	opacity: 40%;
+}
+
+.item-plan-list span {
+	margin-right: 2rem;
+}
+
+.hr-plan-list {
+	margin: 2.4rem 0;
+}
+
+.selected span {
+	color: #0e8784;
+}
+
+.selected {
+	color: #333d4b;
+	opacity: 100%;
+}
+
+.disabled {
+	color: #83888f;
+	opacity: 20%;
+}

@@ -83,7 +83,7 @@ export const headquartersList = [
 	{
 		id: 1,
 		image: "illustration-uk.svg",
-		country: "United Kingdom",
+		country: "UK",
 		street: "68  Asfordby Rd",
 		town1: "Alcaston",
 		town2: "SY6 1YA",

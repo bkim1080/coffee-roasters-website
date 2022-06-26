@@ -26,9 +26,9 @@
 
 @media (min-width: 1440px) {
 	.container-plan-summary {
-		margin-right: 11%;
+		margin-right: 0;
 		text-align: right;
-		width: 50.7%;
+		width: 100%;
 	}
 }
 

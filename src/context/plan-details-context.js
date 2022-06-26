@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 const PlanDetailsContext = React.createContext({ planDetails: {}, onSelectOption: () => {} });
 
@@ -12,6 +12,18 @@ export const PlanDetailsContextProvider = (props) => {
 		coffeeGrind: "",
 		deliverySchedule: "",
 	});
+
+	//set coffeeGrind to empty string if "Capsule" option is selected
+	useEffect(() => {
+		if (planDetails.coffeeForm === "Capsule") {
+			setPlanDetails((prevPlanDetails) => {
+				return {
+					...prevPlanDetails,
+					coffeeGrind: "",
+				};
+			});
+		}
+	}, [planDetails.coffeeForm]);
 
 	const selectOptionHandler = (event) => {
 		const { name, value } = event.target;
