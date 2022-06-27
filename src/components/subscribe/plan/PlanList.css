@@ -23,13 +23,13 @@
 	margin: 2.4rem 0;
 }
 
-.selected span {
-	color: #0e8784;
-}
-
 .selected {
 	color: #333d4b;
 	opacity: 100%;
+}
+
+.selected span {
+	color: #0e8784;
 }
 
 .disabled {
