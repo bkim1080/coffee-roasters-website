@@ -14,25 +14,25 @@ export default function CheckoutModal(props) {
 
 	if (ctx.planDetails.coffeeAmount === "250g") {
 		if (ctx.planDetails.deliverySchedule === "Every Week") {
-			planPrice = "$7.20";
+			planPrice = "$28.80";
 		} else if (ctx.planDetails.deliverySchedule === "Every 2 Weeks") {
-			planPrice = "$9.60";
+			planPrice = "$19.20";
 		} else if (ctx.planDetails.deliverySchedule === "Every Month") {
 			planPrice = "$12.00";
 		}
 	} else if (ctx.planDetails.coffeeAmount === "500g") {
 		if (ctx.planDetails.deliverySchedule === "Every Week") {
-			planPrice = "$13.00";
+			planPrice = "$52.00";
 		} else if (ctx.planDetails.deliverySchedule === "Every 2 Weeks") {
-			planPrice = "$17.50";
+			planPrice = "$35.0";
 		} else if (ctx.planDetails.deliverySchedule === "Every Month") {
 			planPrice = "$22.00";
 		}
 	} else if (ctx.planDetails.coffeeAmount === "1000g") {
 		if (ctx.planDetails.deliverySchedulee === "Every Week") {
-			planPrice = "$22.00";
+			planPrice = "$88.00";
 		} else if (ctx.planDetails.deliverySchedule === "Every 2 Weeks") {
-			planPrice = "$32.00";
+			planPrice = "$64.00";
 		} else if (ctx.planDetails.deliverySchedule === "Every Month") {
 			planPrice = "$42.00";
 		}
