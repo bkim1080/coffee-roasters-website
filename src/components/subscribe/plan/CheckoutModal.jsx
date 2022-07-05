@@ -1,4 +1,5 @@
 import React, { useContext } from "react";
+import ReactDOM from "react-dom";
 
 import Button from "../../UI/Button";
 import Card from "../../UI/Card";
@@ -37,10 +38,10 @@ export default function CheckoutModal(props) {
 			planPrice = "$42.00";
 		}
 	}
-	return (
-		<div>
+	return ReactDOM.createPortal(
+		<React.Fragment>
 			<div className="backdrop-checkout-modal" onClick={props.onClick} />
-			<Card className="container-checkout-modal">
+			<Card className="card-checkout-modal">
 				<div className="heading-checkout-modal">
 					<h2>Order Summary</h2>
 				</div>
@@ -55,6 +56,7 @@ export default function CheckoutModal(props) {
 					</div>
 				</div>
 			</Card>
-		</div>
+		</React.Fragment>,
+		document.getElementById("overlay-root")
 	);
 }

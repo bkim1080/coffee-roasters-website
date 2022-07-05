@@ -8,14 +8,14 @@ import PlanDetailsContext from "../../../context/plan-details-context";
 import "./PlanSummary.css";
 
 export default function PlanSummary() {
-	const [isCheckoutModalShown, setIsCheckoutModalShown] = useState(false);
+	const [isCheckoutModalOpen, setIsCheckoutModalOpen] = useState(false);
 	const [isButtonDisabled, setIsButtonDisabled] = useState(true);
 	const ctx = useContext(PlanDetailsContext);
 
 	//toggle checkout modal on and off
 	const checkoutHandler = () => {
-		setIsCheckoutModalShown((prevIsCheckoutModalShown) => {
-			return !prevIsCheckoutModalShown;
+		setIsCheckoutModalOpen((prevIsCheckoutModalOpen) => {
+			return !prevIsCheckoutModalOpen;
 		});
 	};
 
@@ -49,7 +49,7 @@ export default function PlanSummary() {
 
 	return (
 		<section className="container-plan-summary">
-			{isCheckoutModalShown && <CheckoutModal onClick={checkoutHandler} />}
+			{isCheckoutModalOpen && <CheckoutModal onClick={checkoutHandler} />}
 			<div className="card-plan-summary">
 				<div className="contents-plan-summary">
 					<p className="heading-plan-summary">ORDER SUMMARY</p>

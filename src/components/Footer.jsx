@@ -11,7 +11,7 @@ export default function Footer() {
 					<ul className="links-list-footer">
 						{pageLinks.map((link) => {
 							return (
-								<li className="links-list-item-footer" key={link.id}>
+								<li className="links-item-footer" key={link.id}>
 									<a href={link.url}>{link.text}</a>
 								</li>
 							);
