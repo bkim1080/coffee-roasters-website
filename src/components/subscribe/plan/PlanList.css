@@ -2,8 +2,6 @@
 	font-family: Fraunces, serif;
 	font-size: 2.4rem;
 	line-height: 3.2rem;
-
-	width: 35%;
 }
 
 .container-plan-list ul {
@@ -32,6 +30,7 @@
 	color: #0e8784;
 }
 
+/* must stay below for opactiy */
 .disabled {
 	color: #83888f;
 	opacity: 20%;

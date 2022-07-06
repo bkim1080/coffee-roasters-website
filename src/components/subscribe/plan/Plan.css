@@ -1,7 +1,16 @@
 .container-plan {
 	display: flex;
-	gap: 12.5rem;
+	justify-content: space-between;
+	/* gap: 12.5rem; */
 
 	margin: 0 auto;
 	width: 77%;
+}
+
+.div-one {
+	width: 23%;
+}
+
+.div-two {
+	width: 66%;
 }

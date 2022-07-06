@@ -21,8 +21,8 @@ export default function Plan() {
 	if (isDesktop) {
 		return (
 			<section className={isDesktop && "container-plan"}>
-				{isDesktop && <PlanList />}
-				<div>
+				<div className="div-one">{isDesktop && <PlanList />}</div>
+				<div className="div-two">
 					<PlanQuestions />
 					<PlanSummary />
 				</div>

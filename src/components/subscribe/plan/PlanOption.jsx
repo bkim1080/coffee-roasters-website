@@ -37,24 +37,26 @@ export default function PlanOptionRadio(props) {
 	}
 
 	return (
-		<div className="container-option">
-			<div className="contents-option">
-				<input
-					className="input-option"
-					onChange={ctx.onSelectOption}
-					type="radio"
-					id={props.option.name}
-					name={props.option.type}
-					value={props.option.name}
-					checked={ctx.planDetails[props.option.type] === props.option.name}
-				/>
-				<label className="label-option" htmlFor={props.option.name}>
-					<h4 className="heading-option">{props.option.name}</h4>
-					<p className="description-option">
-						{props.option.type === "deliverySchedule" && deliveryPrice} {props.option.description}
-					</p>
-				</label>
-			</div>
-		</div>
+		// <div className="container-option">
+		// 	<div className="contents-option">
+		<React.Fragment>
+			<input
+				className="input-option"
+				onChange={ctx.onSelectOption}
+				type="radio"
+				id={props.option.name}
+				name={props.option.type}
+				value={props.option.name}
+				checked={ctx.planDetails[props.option.type] === props.option.name}
+			/>
+			<label className="label-option" htmlFor={props.option.name}>
+				<h4 className="heading-option">{props.option.name}</h4>
+				<p className="description-option">
+					{props.option.type === "deliverySchedule" && deliveryPrice} {props.option.description}
+				</p>
+			</label>
+		</React.Fragment>
+		// 	</div>
+		// </div>
 	);
 }
