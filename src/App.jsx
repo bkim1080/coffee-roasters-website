@@ -13,20 +13,22 @@ function App() {
 	return (
 		<React.Fragment>
 			<Header />
-			<Switch>
-				<Route path="/" exact>
-					<Redirect to="/home" />
-				</Route>
-				<Route path="/home">
-					<HomePage />
-				</Route>
-				<Route path="/aboutus">
-					<AboutUsPage />
-				</Route>
-				<Route path="/subscribe">
-					<SubscribePage />
-				</Route>
-			</Switch>
+			<div className="container-app">
+				<Switch>
+					<Route path="/" exact>
+						<Redirect to="/home" />
+					</Route>
+					<Route path="/home">
+						<HomePage />
+					</Route>
+					<Route path="/aboutus">
+						<AboutUsPage />
+					</Route>
+					<Route path="/subscribe">
+						<SubscribePage />
+					</Route>
+				</Switch>
+			</div>
 			<Footer />
 		</React.Fragment>
 	);
