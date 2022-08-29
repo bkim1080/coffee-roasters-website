@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
-import "./PlanList.css";
 import PlanDetailsContext from "../../../context/plan-details-context";
+import "./PlanList.css";
 
 export default function PlanList() {
 	const ctx = useContext(PlanDetailsContext);

@@ -25,3 +25,8 @@ h6 {
 	font-family: "Fraunces", serif;
 	letter-spacing: 0.5px;
 }
+
+img {
+	display: block;
+	max-width: 100%;
+}

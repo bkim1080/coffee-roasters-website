@@ -1,13 +1,11 @@
 import React, { useContext } from "react";
 import ReactDOM from "react-dom";
+import PlanDetailsContext from "../../../context/plan-details-context";
+import "./CheckoutModal.css";
 
 import Button from "../../UI/Button";
 import Card from "../../UI/Card";
 import OrderSummaryText from "./OrderSummaryText";
-
-import PlanDetailsContext from "../../../context/plan-details-context";
-
-import "./CheckoutModal.css";
 
 export default function CheckoutModal(props) {
 	const ctx = useContext(PlanDetailsContext);

@@ -1,8 +1,9 @@
 import React from "react";
-import Card from "../../UI/Card";
-import Feature from "./Feature";
 import { featuresList } from "../../../data";
 import "./ChooseUs.css";
+
+import Card from "../../UI/Card";
+import Feature from "./Feature";
 
 export default function ChooseUs() {
 	return (

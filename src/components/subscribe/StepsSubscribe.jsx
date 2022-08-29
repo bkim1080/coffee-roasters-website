@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
-import PlanSteps from "../PlanSteps";
 import "./StepsSubscribe.css";
+
+import PlanSteps from "../PlanSteps";
 
 export default function StepsSubscribe() {
 	return (

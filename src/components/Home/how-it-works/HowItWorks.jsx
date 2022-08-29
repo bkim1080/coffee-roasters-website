@@ -1,10 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "./HowItWorks.css";
 
 import Button from "../../UI/Button";
 import PlanSteps from "../../PlanSteps";
-
-import "./HowItWorks.css";
 
 export default function Plan() {
 	return (

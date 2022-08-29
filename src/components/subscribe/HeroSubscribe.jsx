@@ -1,6 +1,7 @@
 import React from "react";
-import Card from "../UI/Card";
 import "./HeroSubscribe.css";
+
+import Card from "../UI/Card";
 
 export default function HeroSubscribe() {
 	return (

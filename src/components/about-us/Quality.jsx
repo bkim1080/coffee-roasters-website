@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
-import Card from "../UI/Card";
 import "./Quality.css";
+
+import Card from "../UI/Card";
 
 export default function Quality() {
 	const [isTablet, setIsTablet] = useState(window.innerWidth >= 768 && window.innerWidth < 1440);

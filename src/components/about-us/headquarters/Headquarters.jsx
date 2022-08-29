@@ -1,7 +1,8 @@
 import React from "react";
-import Headquarter from "./Headquarter";
 import { headquartersList } from "../../../data";
 import "./Headquarters.css";
+
+import Headquarter from "./Headquarter";
 
 export default function Headquarters() {
 	return (

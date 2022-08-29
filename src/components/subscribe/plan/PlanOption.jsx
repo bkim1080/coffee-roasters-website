@@ -1,7 +1,5 @@
 import React, { useContext } from "react";
-
 import PlanDetailsContext from "../../../context/plan-details-context";
-
 import "./PlanOption.css";
 
 export default function PlanOptionRadio(props) {

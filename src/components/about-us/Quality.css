@@ -73,16 +73,17 @@
 .image-quality {
 	border-radius: 10px;
 
-	max-width: 100%;
 	position: absolute;
 	right: 13%;
 	width: 74%;
+	/* max-width: 100%; */
 }
 
 @media (min-width: 1440px) {
 	.image-quality {
 		right: 11%;
 		width: 31%;
+		/* max-width: 100%; */
 	}
 }
 
@@ -95,7 +96,7 @@
 
 @media (min-width: 768px) {
 	.text-quality {
-		padding-top: 22rem;
+		padding-top: 30vw;
 		width: 78%;
 	}
 }

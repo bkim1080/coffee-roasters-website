@@ -1,7 +1,8 @@
 import React, { useState, useContext, useEffect } from "react";
-import PlanOptions from "./PlanOptions";
 import PlanDetailsContext from "../../../context/plan-details-context";
 import "./PlanQuestion.css";
+
+import PlanOptions from "./PlanOptions";
 
 export default function Question(props) {
 	const ctx = useContext(PlanDetailsContext);

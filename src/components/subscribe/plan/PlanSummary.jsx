@@ -1,9 +1,9 @@
 import React, { useState, useContext, useEffect } from "react";
+import PlanDetailsContext from "../../../context/plan-details-context";
 
 import Button from "../../UI/Button";
 import CheckoutModal from "./CheckoutModal";
 import OrderSummaryText from "./OrderSummaryText";
-import PlanDetailsContext from "../../../context/plan-details-context";
 
 import "./PlanSummary.css";
 

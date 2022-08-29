@@ -1,8 +1,8 @@
 import React from "react";
-
-import PlanQuestion from "./PlanQuestion";
 import { planQuestionsList } from "../../../data";
 import "./PlanQuestions.css";
+
+import PlanQuestion from "./PlanQuestion";
 
 export default function Questions() {
 	return (

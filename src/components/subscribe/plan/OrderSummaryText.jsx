@@ -1,6 +1,5 @@
 import React, { useContext } from "react";
 import PlanDetailsContext from "../../../context/plan-details-context";
-
 import "./OrderSummaryText.css";
 
 export default function OrderSummaryText(props) {

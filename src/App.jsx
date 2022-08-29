@@ -1,12 +1,13 @@
 import React from "react";
+import { Route, Switch } from "react-router-dom";
+import { Redirect } from "react-router-dom";
 import "./App.css";
+
+import AboutUsPage from "./components/pages/AboutUsPage";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import HomePage from "./components/pages/HomePage";
-import AboutUsPage from "./components/pages/AboutUsPage";
 import SubscribePage from "./components/pages/SubscribePage";
-import { Route, Switch } from "react-router-dom";
-import { Redirect } from "react-router-dom";
 
 function App() {
 	return (
