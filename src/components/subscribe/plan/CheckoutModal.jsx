@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import ReactDOM from "react-dom";
 import PlanDetailsContext from "../../../context/plan-details-context";
-import "./CheckoutModal.css";
+import styles from "./CheckoutModal.module.css";
 
 import Button from "../../UI/Button";
 import Card from "../../UI/Card";
@@ -38,15 +38,15 @@ export default function CheckoutModal(props) {
 	}
 	return ReactDOM.createPortal(
 		<React.Fragment>
-			<div className="backdrop-checkout-modal" onClick={props.onClick} />
-			<Card className="card-checkout-modal">
-				<div className="heading-checkout-modal">
+			<div className={styles.backdrop} onClick={props.onClick} />
+			<Card className={styles.card}>
+				<div className={styles.heading}>
 					<h2>Order Summary</h2>
 				</div>
-				<div className="body-checkout-modal">
+				<div className={styles.body}>
 					<div>
-						<OrderSummaryText className="summary-checkout-modal" />
-						<p className="subtext-checkout-modal">
+						<OrderSummaryText className={styles.summary} />
+						<p className={styles.subtext}>
 							Is this correct? You can proceed to checkout or go back to plan selection if something is
 							off. Subscription discount codes can also be redeemed at the checkout.
 						</p>

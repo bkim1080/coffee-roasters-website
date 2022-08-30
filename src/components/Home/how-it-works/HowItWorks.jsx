@@ -1,19 +1,19 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./HowItWorks.css";
+import styles from "./HowItWorks.module.css";
 
 import Button from "../../UI/Button";
 import PlanSteps from "../../PlanSteps";
 
 export default function Plan() {
 	return (
-		<section className="container-works">
-			<h4 className="heading-works">How it works</h4>
-			<div className="plan-steps-works">
-				<PlanSteps headingClass="name-step-works" descriptionClass="description-step-works" />
+		<section className={styles.container}>
+			<h4 className={styles.heading}>How it works</h4>
+			<div className={`${styles["plan-steps"]}`}>
+				<PlanSteps headingClass={`${styles["name-step"]}`} descriptionClass={`${styles["description-step"]}`} />
 			</div>
 			<Link to="/subscribe">
-				<Button className="button-works">Create your plan</Button>
+				<Button className={styles.button}>Create your plan</Button>
 			</Link>
 		</section>
 	);

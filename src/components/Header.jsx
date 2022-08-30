@@ -1,16 +1,16 @@
 import React, { useState } from "react";
 import { pageLinks } from "../data";
-import "./Header.css";
+import styles from "./Header.module.css";
 
 export default function Header() {
 	const [isLinksShown, setIsLinksShown] = useState(false);
 	return (
 		<header>
 			<nav>
-				<div className="container-header">
-					<img className="logo-header" src="assets/img/shared/desktop/logo.svg" alt="coffeeroasters logo" />
+				<div className={styles.container}>
+					<img className={styles.logo} src="assets/img/shared/desktop/logo.svg" alt="coffeeroasters logo" />
 					<img
-						className="menu-icon-header"
+						className={`${styles["menu-icon"]}`}
 						src={
 							isLinksShown
 								? "assets/img/shared/mobile/icon-close.svg"
@@ -19,8 +19,8 @@ export default function Header() {
 						alt="dropdown menu icon"
 						onClick={() => setIsLinksShown((prevIsLinksShown) => !prevIsLinksShown)}
 					/>
-					<div className="links-desktop-header">
-						<ul className="links-list-desktop-header">
+					<div className={`${styles["links-desktop"]}`}>
+						<ul className={`${styles["links-list-desktop"]}`}>
 							{pageLinks.map((link) => {
 								return (
 									<li key={link.id}>
@@ -32,8 +32,8 @@ export default function Header() {
 					</div>
 				</div>
 				{isLinksShown && (
-					<div className="links-mobile-header">
-						<ul className="links-list-mobile-header">
+					<div className={`${styles["links-mobile"]}`}>
+						<ul className={`${styles["links-list-mobile"]}`}>
 							{pageLinks.map((link) => {
 								return (
 									<li key={link.id}>

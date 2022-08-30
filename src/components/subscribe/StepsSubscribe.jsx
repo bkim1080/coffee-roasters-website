@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from "react";
-import "./StepsSubscribe.css";
+import styles from "./StepsSubscribe.module.css";
 
 import PlanSteps from "../PlanSteps";
 
 export default function StepsSubscribe() {
 	return (
-		<section className="container-steps-subscribe">
-			<div className="plan-steps-subscribe">
-				<PlanSteps headingClass="name-steps-subscribe" descriptionClass="description-steps-subscribe" />
+		<section className={styles.container}>
+			<div className={styles.plan}>
+				<PlanSteps headingClass={styles.name} descriptionClass={styles.description} />
 			</div>
 		</section>
 	);

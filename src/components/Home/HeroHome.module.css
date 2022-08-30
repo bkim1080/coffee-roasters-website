@@ -1,36 +1,36 @@
-.card-hero-home {
+.card {
 	background-image: url("/public/assets/img/home/mobile/image-hero-coffeepress.jpg");
 	background-size: cover;
 }
 
 @media (min-width: 768px) {
-	.card-hero-home {
+	.card {
 		background-image: url("/public/assets/img/home/tablet/image-hero-coffeepress.jpg");
 	}
 }
 
 @media (min-width: 1440px) {
-	.card-hero-home {
+	.card {
 		background-image: url("/public/assets/img/home/desktop/image-hero-coffeepress.jpg");
 	}
 }
 
-.container-hero-home {
+.container {
 	margin-bottom: 12rem;
 }
 
 @media (min-width: 768px) {
-	.container-hero-home {
+	.container {
 		margin-bottom: 15rem;
 	}
 }
 @media (min-width: 1440px) {
-	.container-hero-home {
+	.container {
 		margin-bottom: 18rem;
 	}
 }
 
-.contents-hero-home {
+.contents {
 	margin: 0 auto;
 	padding: 10rem 0;
 	text-align: center;
@@ -38,33 +38,33 @@
 }
 
 @media (min-width: 768px) {
-	.contents-hero-home {
+	.contents {
 		text-align: left;
 		width: 83%;
 	}
 }
 
 @media (min-width: 1440px) {
-	.contents-hero-home {
+	.contents {
 		padding: 11.7rem 0;
 		width: 87%;
 	}
 }
 
-.heading-hero-home {
+.heading {
 	color: #fefcf7;
 	font-size: 4rem;
 	line-height: 4rem;
 }
 
 @media (min-width: 768px) {
-	.heading-hero-home {
+	.heading {
 		width: 48%;
 	}
 }
 
 @media (min-width: 1440px) {
-	.heading-hero-home {
+	.heading {
 		font-size: 7.2rem;
 		line-height: 7.2rem;
 
@@ -72,7 +72,7 @@
 	}
 }
 
-.description-hero-home {
+.description {
 	color: #fefcf7;
 	font-size: 1.5rem;
 	font-family: "Barlow", sans-serif;
@@ -83,7 +83,7 @@
 }
 
 @media (min-width: 768px) {
-	.description-hero-home {
+	.description {
 		width: 65%;
 	}
 }

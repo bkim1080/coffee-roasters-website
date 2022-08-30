@@ -1,37 +1,37 @@
-.card-hero-subscribe {
+.card {
 	background-image: url("/public/assets/img/plan/mobile/image-hero-blackcup.jpg");
 	background-size: cover;
 }
 
 @media (min-width: 768px) {
-	.card-hero-subscribe {
+	.card {
 		background-image: url("/public/assets/img/plan/tablet/image-hero-blackcup.jpg");
 	}
 }
 
 @media (min-width: 1440px) {
-	.card-hero-subscribe {
+	.card {
 		background-image: url("/public/assets/img/plan/desktop/image-hero-blackcup.jpg");
 	}
 }
 
-.container-hero-subscribe {
+.container {
 	margin-bottom: 12rem;
 }
 
 @media (min-width: 768px) {
-	.container-hero-subscribe {
+	.container {
 		margin-bottom: 14.4rem;
 	}
 }
 
 @media (min-width: 1440px) {
-	.container-hero-subscribe {
+	.container {
 		margin-bottom: 16.8rem;
 	}
 }
 
-.contents-hero-subscribe {
+.contents {
 	margin: 0 auto;
 	padding: 10rem 0 13.5rem;
 	text-align: center;
@@ -39,7 +39,7 @@
 }
 
 @media (min-width: 768px) {
-	.contents-hero-subscribe {
+	.contents {
 		padding: 12.6rem 0;
 		text-align: left;
 		width: 83%;
@@ -47,13 +47,13 @@
 }
 
 @media (min-width: 1440px) {
-	.contents-hero-subscribe {
+	.contents {
 		padding: 13.4rem 0;
 		width: 87%;
 	}
 }
 
-.heading-hero-subscribe {
+.heading {
 	color: #fefcf7;
 	font-size: 4rem;
 	line-height: 4rem;
@@ -62,20 +62,20 @@
 }
 
 @media (min-width: 768px) {
-	.heading-hero-subscribe {
+	.heading {
 		font-size: 4.8rem;
 		line-height: 4.8rem;
 	}
 }
 
 @media (min-width: 1440px) {
-	.heading-hero-subscribe {
+	.heading {
 		font-size: 7.2rem;
 		line-height: 7.2rem;
 	}
 }
 
-.description-hero-subscribe {
+.description {
 	color: #fefcf7;
 	font-family: "Barlow", sans-serif;
 	font-size: 1.5rem;
@@ -84,13 +84,13 @@
 }
 
 @media (min-width: 748px) {
-	.description-hero-subscribe {
+	.description {
 		width: 68%;
 	}
 }
 
 @media (min-width: 1440px) {
-	.description-hero-subscribe {
+	.description {
 		font-size: 1.6rem;
 		line-height: 2.6rem;
 

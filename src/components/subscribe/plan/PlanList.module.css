@@ -1,23 +1,23 @@
-.container-plan-list {
+.container {
 	font-family: Fraunces, serif;
 	font-size: 2.4rem;
 	line-height: 3.2rem;
 }
 
-.container-plan-list ul {
+.container ul {
 	list-style: none;
 }
 
-.item-plan-list {
+.item {
 	color: #83888f;
 	opacity: 40%;
 }
 
-.item-plan-list span {
+.item span {
 	margin-right: 2rem;
 }
 
-.hr-plan-list {
+.hr {
 	margin: 2.4rem 0;
 }
 

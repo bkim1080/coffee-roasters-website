@@ -1,16 +1,16 @@
 import React from "react";
-import "./Headquarter.css";
+import styles from "./Headquarter.module.css";
 
 export default function Headquarter(props) {
 	return (
-		<div className="container-headquarter">
+		<div className={styles.container}>
 			<img
-				className="image-headquarter"
+				className={styles.image}
 				src={`/assets/img/about/desktop/${props.headquarter.image}`}
 				alt={props.headquarter.alt}
 			/>
-			<h3 className="heading-headquarter">{props.headquarter.country}</h3>
-			<p className="info-headquarter">
+			<h3 className={styles.heading}>{props.headquarter.country}</h3>
+			<p className={styles.info}>
 				{props.headquarter.street}
 				<br />
 				{props.headquarter.town1}

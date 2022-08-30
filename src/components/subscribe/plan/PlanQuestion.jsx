@@ -1,6 +1,6 @@
 import React, { useState, useContext, useEffect } from "react";
 import PlanDetailsContext from "../../../context/plan-details-context";
-import "./PlanQuestion.css";
+import styles from "./PlanQuestion.module.css";
 
 import PlanOptions from "./PlanOptions";
 
@@ -24,14 +24,14 @@ export default function Question(props) {
 	}
 
 	return (
-		<div className="container-question">
+		<div className={styles.container}>
 			<div
 				onClick={isDisabled ? undefined : showOptionsHandler}
-				className={`heading-container-question ${isDisabled ? "disabled" : ""}`}
+				className={`${styles["heading-container"]} ${isDisabled ? styles.disabled : ""}`}
 			>
-				<h2 className="heading-question">{props.planQuestion.question}</h2>
+				<h2 className={styles.heading}>{props.planQuestion.question}</h2>
 				<img
-					className={`arrow-image-question ${isShown ? "shown" : ""}`}
+					className={`${styles["arrow-image"]} ${isShown ? styles.shown : ""}`}
 					src="/assets/img/plan/desktop/icon-arrow.svg"
 					alt="arrow icon"
 				/>

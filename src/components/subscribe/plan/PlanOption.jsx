@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import PlanDetailsContext from "../../../context/plan-details-context";
-import "./PlanOption.css";
+import styles from "./PlanOption.module.css";
 
 export default function PlanOptionRadio(props) {
 	const ctx = useContext(PlanDetailsContext);
@@ -39,7 +39,7 @@ export default function PlanOptionRadio(props) {
 		// 	<div className="contents-option">
 		<React.Fragment>
 			<input
-				className="input-option"
+				className={styles.input}
 				onChange={ctx.onSelectOption}
 				type="radio"
 				id={props.option.name}
@@ -47,9 +47,9 @@ export default function PlanOptionRadio(props) {
 				value={props.option.name}
 				checked={ctx.planDetails[props.option.type] === props.option.name}
 			/>
-			<label className="label-option" htmlFor={props.option.name}>
-				<h4 className="heading-option">{props.option.name}</h4>
-				<p className="description-option">
+			<label className={styles.label} htmlFor={props.option.name}>
+				<h4 className={styles.heading}>{props.option.name}</h4>
+				<p className={styles.description}>
 					{props.option.type === "deliverySchedule" && deliveryPrice} {props.option.description}
 				</p>
 			</label>

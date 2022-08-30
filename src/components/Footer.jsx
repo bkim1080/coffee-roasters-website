@@ -1,24 +1,24 @@
 import React from "react";
 import { pageLinks } from "../data";
-import "./Footer.css";
+import styles from "./Footer.module.css";
 
 export default function Footer() {
 	return (
-		<footer className="container-footer">
-			<div className="content-footer">
-				<img className="logo-footer" src="assets/img/shared/desktop/logo.svg" alt="company logo" />
-				<div className="links-footer">
-					<ul className="links-list-footer">
+		<footer className={styles.container}>
+			<div className={styles.content}>
+				<img className={styles.logo} src="assets/img/shared/desktop/logo.svg" alt="company logo" />
+				<div className={styles.links}>
+					<ul className={`${styles["links-list"]}`}>
 						{pageLinks.map((link) => {
 							return (
-								<li className="links-item-footer" key={link.id}>
+								<li className={`${styles["links-item"]}`} key={link.id}>
 									<a href={link.url}>{link.text}</a>
 								</li>
 							);
 						})}
 					</ul>
 				</div>
-				<div className="social-icons-footer">
+				<div className={`${styles["social-icons"]}`}>
 					<a href="https://facebook.com">
 						<img src="assets/img/shared/desktop/icon-facebook.svg" alt="Facebook icon" />
 					</a>

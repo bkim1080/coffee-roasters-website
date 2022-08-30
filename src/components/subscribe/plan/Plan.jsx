@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "./Plan.css";
+import styles from "./Plan.module.css";
 
 import PlanList from "./PlanList";
 import PlanQuestions from "./PlanQuestions";
@@ -21,9 +21,9 @@ export default function Plan() {
 
 	if (isDesktop) {
 		return (
-			<section className={isDesktop && "container-plan"}>
-				<div className="div-one">{isDesktop && <PlanList />}</div>
-				<div className="div-two">
+			<section className={isDesktop && styles.container}>
+				<div className={`${styles["div-one"]}`}>{isDesktop && <PlanList />}</div>
+				<div className={`${styles["div-two"]}`}>
 					<PlanQuestions />
 					<PlanSummary />
 				</div>

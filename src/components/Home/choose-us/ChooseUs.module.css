@@ -1,4 +1,4 @@
-.card-choose {
+.card {
 	background-color: #2c343e;
 
 	left: 0;
@@ -10,28 +10,28 @@
 }
 
 @media (min-width: 768px) {
-	.card-choose {
+	.card {
 		padding: 5.6rem 0 38rem;
 	}
 }
 
 @media (min-width: 1440px) {
-	.card-choose {
+	.card {
 		padding: 10rem 0 31rem;
 	}
 }
 
-.container-choose {
+.container {
 	margin-bottom: 45rem;
 }
 
 @media (min-width: 1440px) {
-	.container-choose {
+	.container {
 		margin-bottom: 55rem;
 	}
 }
 
-.description-choose {
+.description {
 	color: #fefcf7;
 	font-family: "Barlow", sans-serif;
 	font-size: 1.5rem;
@@ -40,13 +40,13 @@
 }
 
 @media (min-width: 1440px) {
-	.description-choose {
+	.description {
 		font-size: 1.6rem;
 		line-height: 2.6rem;
 	}
 }
 
-.feature-cards-choose {
+.feature-cards {
 	display: flex;
 	flex-direction: column;
 	gap: 2.4rem;
@@ -56,13 +56,13 @@
 }
 
 @media (min-width: 768px) {
-	.feature-cards-choose {
+	.feature-cards {
 		top: 280px;
 	}
 }
 
 @media (min-width: 1440px) {
-	.feature-cards-choose {
+	.feature-cards {
 		flex-direction: row;
 		gap: 3rem;
 
@@ -72,7 +72,7 @@
 	}
 }
 
-.heading-choose {
+.heading {
 	color: #fefcf7;
 	font-size: 2.8rem;
 	line-height: 2.8rem;
@@ -81,14 +81,14 @@
 }
 
 @media (min-width: 768px) {
-	.heading-choose {
+	.heading {
 		font-size: 3.2rem;
 		line-height: 4.8rem;
 	}
 }
 
 @media (min-width: 1440px) {
-	.heading-choose {
+	.heading {
 		font-size: 4rem;
 		line-height: 4.8rem;
 
@@ -96,19 +96,19 @@
 	}
 }
 
-.intro-text-choose {
+.intro-text {
 	margin: 0 auto;
 	width: 85%;
 }
 
 @media (min-width: 768px) {
-	.intro-text-choose {
+	.intro-text {
 		width: 71%;
 	}
 }
 
 @media (min-width: 1440px) {
-	.intro-text-choose {
+	.intro-text {
 		width: 40%;
 	}
 }

@@ -1,11 +1,11 @@
-.container-works {
+.container {
 	margin: 0 auto 12rem;
 	text-align: center;
 	width: 87%;
 }
 
 @media (min-width: 768px) {
-	.container-works {
+	.container {
 		margin-bottom: 14.4rem;
 		text-align: left;
 		width: 90%;
@@ -13,37 +13,37 @@
 }
 
 @media (min-width: 1440px) {
-	.container-works {
+	.container {
 		margin-bottom: 20rem;
 		margin-left: 11.5%;
 		width: 73%;
 	}
 }
 
-.description-step-works,
-.name-step-works {
+.description-step,
+.name-step {
 	color: #333d4b;
 }
 
-.heading-works {
+.heading {
 	color: #83888f;
 	font-size: 2.4rem;
 	line-height: 3.2rem;
 }
 
-.plan-steps-works {
+.plan-steps {
 	margin-top: 8rem;
 	margin-bottom: 8rem;
 }
 
 @media (min-width: 768px) {
-	.plan-steps-works {
+	.plan-steps {
 		margin-bottom: 4.4rem;
 	}
 }
 
 @media (min-width: 1440px) {
-	.plan-steps-works {
+	.plan-steps {
 		margin-bottom: 6.4rem;
 	}
 }

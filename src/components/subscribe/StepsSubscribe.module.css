@@ -1,4 +1,4 @@
-.container-steps-subscribe {
+.container {
 	background-color: #2c343e;
 	border-radius: 10px;
 
@@ -7,38 +7,38 @@
 }
 
 @media (min-width: 768px) {
-	.container-steps-subscribe {
+	.container {
 		margin-bottom: 12rem;
 		text-align: left;
 	}
 }
 
 @media (min-width: 1440px) {
-	.container-steps-subscribe {
+	.container {
 		margin-bottom: 16.8rem;
 		width: 90%;
 	}
 }
 
-.description-steps-subscribe,
-.name-steps-subscribe {
+.description,
+.name {
 	color: #ffffff;
 }
 
-.plan-steps-subscribe {
+.plan {
 	margin: 0 auto;
 	padding: 8rem 0;
 	width: 87%;
 }
 
 @media (min-width: 768px) {
-	.plan-steps-subscribe {
+	.plan {
 		width: 90%;
 	}
 }
 
 @media (min-width: 768px) {
-	.plan-steps-subscribe {
+	.plan {
 		padding: 10rem 0;
 		margin-left: 8.5rem;
 		width: 80%;

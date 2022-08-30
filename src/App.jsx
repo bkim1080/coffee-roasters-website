@@ -1,7 +1,7 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
 import { Redirect } from "react-router-dom";
-import "./App.css";
+import styles from "./App.module.css";
 
 import AboutUsPage from "./components/pages/AboutUsPage";
 import Footer from "./components/Footer";
@@ -13,7 +13,7 @@ function App() {
 	return (
 		<React.Fragment>
 			<Header />
-			<div className="container-app">
+			<div className={styles.container}>
 				<Switch>
 					<Route path="/" exact>
 						<Redirect to="/home" />

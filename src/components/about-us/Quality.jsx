@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./Quality.css";
+import styles from "./Quality.module.css";
 
 import Card from "../UI/Card";
 
@@ -24,18 +24,18 @@ export default function Quality() {
 	});
 
 	return (
-		<section className="container-quality">
+		<section className={styles.container}>
 			{isTablet ? (
-				<img className="image-quality" src="/assets/img/about/tablet/image-quality.jpg" alt="cup of coffee" />
+				<img className={styles.image} src="/assets/img/about/tablet/image-quality.jpg" alt="cup of coffee" />
 			) : isDesktop ? (
-				<img className="image-quality" src="/assets/img/about/desktop/image-quality.jpg" alt="cup of coffee" />
+				<img className={styles.image} src="/assets/img/about/desktop/image-quality.jpg" alt="cup of coffee" />
 			) : (
-				<img className="image-quality" src="/assets/img/about/mobile/image-quality.jpg" alt="cup of coffee" />
+				<img className={styles.image} src="/assets/img/about/mobile/image-quality.jpg" alt="cup of coffee" />
 			)}
-			<Card className="card-quality">
-				<div className="text-quality">
-					<h2 className="heading-quality">Uncompromising quality</h2>
-					<div className="description-quality">
+			<Card className={styles.card}>
+				<div className={styles.text}>
+					<h2 className={styles.heading}>Uncompromising quality</h2>
+					<div className={styles.description}>
 						Although we work with growers who pay close attention to all stages of harvest and processing,
 						we employ, on our end, a rigorous quality control program to avoid over-roasting or baking the
 						coffee dry. Every bag of coffee is tagged with a roast date and batch number. Our goal is to

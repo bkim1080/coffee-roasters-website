@@ -1,23 +1,23 @@
-.container-commitment {
+.container {
 	margin: 0 auto 12rem;
 	width: 87%;
 }
 
 @media (min-width: 768px) {
-	.container-commitment {
+	.container {
 		margin-bottom: 14.4rem;
 		width: 90%;
 	}
 }
 
 @media (min-width: 1440px) {
-	.container-commitment {
+	.container {
 		margin-bottom: 16.8rem;
 		width: 77%;
 	}
 }
 
-.content-commitment {
+.content {
 	display: flex;
 	flex-direction: column;
 	gap: 4.8rem;
@@ -26,7 +26,7 @@
 }
 
 @media (min-width: 768px) {
-	.content-commitment {
+	.content {
 		align-items: center;
 		flex-direction: row;
 		gap: 7rem;
@@ -36,12 +36,12 @@
 }
 
 @media (min-width: 1440px) {
-	.content-commitment {
+	.content {
 		gap: 12.5rem;
 	}
 }
 
-.description-commitment {
+.description {
 	color: #333d4b;
 	font-family: "Barlow", sans-serif;
 	font-size: 1.5rem;
@@ -50,13 +50,13 @@
 }
 
 @media (min-width: 1440px) {
-	.description-commitment {
+	.description {
 		font-size: 1.6rem;
 		line-height: 2.6rem;
 	}
 }
 
-.heading-commitment {
+.heading {
 	color: #333d4b;
 	font-size: 3.2rem;
 	line-height: 4.8rem;
@@ -65,13 +65,13 @@
 }
 
 @media (min-width: 1440px) {
-	.heading-commitment {
+	.heading {
 		font-size: 4rem;
 
 		margin-bottom: 3.2rem;
 	}
 }
 
-.image-commitment {
+.image {
 	border-radius: 10px;
 }

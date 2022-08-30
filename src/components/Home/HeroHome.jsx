@@ -1,17 +1,17 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./HeroHome.css";
+import styles from "./HeroHome.module.css";
 
 import Button from "../UI/Button";
 import Card from "../UI/Card";
 
 export default function Hero() {
 	return (
-		<section className="container-hero-home">
-			<Card className="card-hero-home">
-				<div className="contents-hero-home">
-					<h1 className="heading-hero-home">Great coffee made simple.</h1>
-					<p className="description-hero-home">
+		<section className={styles.container}>
+			<Card className={styles.card}>
+				<div className={styles.contents}>
+					<h1 className={styles.heading}>Great coffee made simple.</h1>
+					<p className={styles.description}>
 						Start your mornings with the world’s best coffees. Try our expertly curated artisan coffees from
 						our best roasters delivered directly to your door, at your schedule.
 					</p>

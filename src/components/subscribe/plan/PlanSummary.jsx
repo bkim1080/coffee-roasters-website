@@ -1,11 +1,10 @@
 import React, { useState, useContext, useEffect } from "react";
 import PlanDetailsContext from "../../../context/plan-details-context";
+import styles from "./PlanSummary.module.css";
 
 import Button from "../../UI/Button";
 import CheckoutModal from "./CheckoutModal";
 import OrderSummaryText from "./OrderSummaryText";
-
-import "./PlanSummary.css";
 
 export default function PlanSummary() {
 	const [isCheckoutModalOpen, setIsCheckoutModalOpen] = useState(false);
@@ -48,16 +47,16 @@ export default function PlanSummary() {
 	console.log(isButtonDisabled);
 
 	return (
-		<section className="container-plan-summary">
+		<section className={styles.container}>
 			{isCheckoutModalOpen && <CheckoutModal onClick={checkoutHandler} />}
-			<div className="card-plan-summary">
-				<div className="contents-plan-summary">
-					<p className="heading-plan-summary">ORDER SUMMARY</p>
-					<OrderSummaryText className="text-plan-summary" />
+			<div className={styles.card}>
+				<div className={styles.contents}>
+					<p className={styles.heading}>ORDER SUMMARY</p>
+					<OrderSummaryText className={styles.text} />
 				</div>
 			</div>
 			<Button
-				className={isButtonDisabled && "disabled-button-summary"}
+				className={isButtonDisabled && `${styles["disabled-button"]}`}
 				onClick={checkoutHandler}
 				disabled={isButtonDisabled}
 			>

@@ -1,10 +1,10 @@
-.container-headquarters {
+.container {
 	margin-bottom: 12rem;
 	text-align: center;
 }
 
 @media (min-width: 768px) {
-	.container-headquarters {
+	.container {
 		margin: 0 auto 14.4rem;
 		text-align: left;
 		width: 90%;
@@ -12,13 +12,13 @@
 }
 
 @media (min-width: 1440px) {
-	.container-headquarters {
+	.container {
 		width: 77%;
 		margin-bottom: 16.8rem;
 	}
 }
 
-.heading-headquarters {
+.heading {
 	color: #83888f;
 	font-size: 2.4rem;
 	line-height: 3.2rem;
@@ -26,18 +26,18 @@
 	margin-bottom: 7.2rem;
 }
 
-.list-headquarters {
+.list {
 	display: flex;
 	flex-direction: column;
 	gap: 8rem;
 }
 
 @media (min-width: 768px) {
-	.list-headquarters {
+	.list {
 		align-items: flex-end;
 		flex-direction: row;
 	}
-	.list-headquarters > * {
+	.list > * {
 		flex: 1;
 	}
 }

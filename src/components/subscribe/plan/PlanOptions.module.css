@@ -1,4 +1,4 @@
-.container-options {
+.container {
 	display: flex;
 	flex-direction: column;
 	gap: 1.6rem;
@@ -6,18 +6,18 @@
 }
 
 @media (min-width: 768px) {
-	.container-options {
+	.container {
 		flex-direction: row;
 		gap: 1rem;
 		margin-top: 4rem;
 	}
-	.container-options > * {
+	.container > * {
 		flex: 1;
 	}
 }
 
 @media (min-width: 1440px) {
-	.container-options {
+	.container {
 		gap: 2.3rem;
 		margin-top: 5.6rem;
 	}

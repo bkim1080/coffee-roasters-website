@@ -1,13 +1,14 @@
 import React from "react";
-import CoffeeBean from "./CoffeeBean";
 import { coffeeList } from "../../../data";
-import "./OurCollection.css";
+import styles from "./OurCollection.module.css";
+
+import CoffeeBean from "./CoffeeBean";
 
 export default function OurCollection() {
 	return (
-		<section className="container-collection">
-			<p className="heading-collection">our collection</p>
-			<div className="coffeebeans-collection">
+		<section className={styles.container}>
+			<p className={styles.heading}>our collection</p>
+			<div className={styles.coffeebeans}>
 				{coffeeList.map((coffee) => {
 					const { id, image, name, description } = coffee;
 					return <CoffeeBean key={id} image={image} name={name} description={description} />;
