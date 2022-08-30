@@ -18,7 +18,7 @@ export default function PlanSummary() {
 		});
 	};
 
-	//disable checkout button all questions are not answered
+	//disable checkout button if all questions are not answered
 	useEffect(() => {
 		if (
 			ctx.planDetails.coffeeForm &&
@@ -35,6 +35,8 @@ export default function PlanSummary() {
 			ctx.planDetails.deliverySchedule !== ""
 		) {
 			setIsButtonDisabled(false);
+		} else {
+			setIsButtonDisabled(true);
 		}
 	}, [
 		ctx.planDetails.coffeeForm,
@@ -43,8 +45,6 @@ export default function PlanSummary() {
 		ctx.planDetails.coffeeGrind,
 		ctx.planDetails.deliverySchedule,
 	]);
-
-	console.log(isButtonDisabled);
 
 	return (
 		<section className={styles.container}>
