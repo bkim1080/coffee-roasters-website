@@ -25,13 +25,18 @@ export default function Quality() {
 
 	return (
 		<section className={styles.container}>
-			{isTablet ? (
-				<img className={styles.image} src="/assets/img/about/tablet/image-quality.jpg" alt="cup of coffee" />
-			) : isDesktop ? (
-				<img className={styles.image} src="/assets/img/about/desktop/image-quality.jpg" alt="cup of coffee" />
-			) : (
-				<img className={styles.image} src="/assets/img/about/mobile/image-quality.jpg" alt="cup of coffee" />
-			)}
+			<img
+				className={styles.image}
+				src={
+					isTablet
+						? "/assets/img/about/tablet/image-quality.jpg"
+						: isDesktop
+						? "/assets/img/about/desktop/image-quality.jpg"
+						: "/assets/img/about/mobile/image-quality.jpg"
+				}
+				alt="cup of coffee"
+			/>
+
 			<Card className={styles.card}>
 				<div className={styles.text}>
 					<h2 className={styles.heading}>Uncompromising quality</h2>
