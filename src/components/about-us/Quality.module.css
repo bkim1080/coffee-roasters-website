@@ -76,15 +76,26 @@
 	position: absolute;
 	right: 13%;
 	width: 74%;
-	/* max-width: 100%; */
+}
+
+@media (min-width: 768px) {
+	.image {
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+		max-width: 900px;
+	}
 }
 
 @media (min-width: 1440px) {
 	.image {
-		right: 11%;
-		width: 31%;
-		/* max-width: 100%; */
+		left: 65rem;
+		max-width: 445px;
 	}
+}
+
+.image-container {
+	max-width: 573px;
 }
 
 .text {
