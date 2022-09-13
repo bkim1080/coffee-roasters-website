@@ -25,7 +25,6 @@ export default function Quality() {
 
 	return (
 		<section className={styles.container}>
-			{/* <div className={`${styles["image-container"]}`}> */}
 			<img
 				className={styles.image}
 				src={
@@ -37,7 +36,6 @@ export default function Quality() {
 				}
 				alt="cup of coffee"
 			/>
-			{/* </div> */}
 			<Card className={styles.card}>
 				<div className={styles.text}>
 					<h2 className={styles.heading}>Uncompromising quality</h2>

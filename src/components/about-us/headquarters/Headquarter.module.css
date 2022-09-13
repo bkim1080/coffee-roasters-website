@@ -22,6 +22,10 @@
 	}
 }
 
+.image {
+	margin: 0 auto;
+}
+
 .info {
 	font-family: "Barlow", sans-serif;
 	font-size: 1.6rem;
