@@ -3,6 +3,7 @@
 	justify-content: space-between;
 	margin: 3.2rem auto 4rem;
 	width: 87%;
+	max-width: 1296px;
 }
 
 @media (min-width: 768px) {
