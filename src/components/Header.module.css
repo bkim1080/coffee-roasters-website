@@ -2,8 +2,8 @@
 	display: flex;
 	justify-content: space-between;
 	margin: 3.2rem auto 4rem;
-	width: 87%;
 	max-width: 1296px;
+	width: 87%;
 }
 
 @media (min-width: 768px) {
@@ -18,20 +18,6 @@
 		margin-bottom: 4.3rem;
 		width: 90%;
 	}
-}
-
-.menu-icon {
-	align-self: center;
-}
-
-@media (min-width: 768px) {
-	.menu-icon {
-		display: none;
-	}
-}
-
-.menu-icon:hover {
-	cursor: pointer;
 }
 
 .links-desktop {
@@ -118,4 +104,18 @@
 		height: 26px;
 		width: 236px;
 	}
+}
+
+.menu-icon {
+	align-self: center;
+}
+
+@media (min-width: 768px) {
+	.menu-icon {
+		display: none;
+	}
+}
+
+.menu-icon:hover {
+	cursor: pointer;
 }
